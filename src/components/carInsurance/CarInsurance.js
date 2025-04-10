@@ -8,7 +8,7 @@ import New from '../../assets/New.png';
 import InsuranceForm from '../insuranceForm/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex w-full p-10 mt-[5rem]">
+        <div className="flex w-full p-10">
             
             <div className="w-1/3">
                 <div className='flex flex-col gap-5'>
