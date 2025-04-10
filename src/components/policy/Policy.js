@@ -27,7 +27,7 @@ function Policy() {
                <Image src={two} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
                 <span className='font-mulish text-[18px]  text-white' ><b>How much your car is worth:</b></span>
-                <span className='font-mulish text-[16px]  text-white'>Make sure the cost of your insurance policy matches your vehicle's value..</span>
+                <span className='font-mulish text-[16px]  text-white'>Make sure the cost of your insurance policy matches your vehicles value..</span>
                </div>
             </div>
             <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
@@ -42,8 +42,8 @@ function Policy() {
             <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start '>
                <Image src={four} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
-                <span className='font-mulish text-[18px]  text-white'><b>How much you're willing to pay out of pocket:</b></span>
-                <span className='font-mulish text-[16px]  text-white'>Think about your budget and how much risk you're comfortable with. In case of an accident, if you’re not comfortable spending money from your own pocket for your car repairs, opt for the Own Damage cover instead of a Third-party policy.</span>
+                <span className='font-mulish text-[18px]  text-white'><b>How much youre willing to pay out of pocket:</b></span>
+                <span className='font-mulish text-[16px]  text-white'>Think about your budget and how much risk youre comfortable with. In case of an accident, if youre not comfortable spending money from your own pocket for your car repairs, opt for the Own Damage cover instead of a Third-party policy.</span>
                </div>
             </div>
             <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
