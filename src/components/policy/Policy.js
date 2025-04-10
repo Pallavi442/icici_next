@@ -62,7 +62,7 @@ function Policy() {
             </div> 
         </div>
         <div className='py-4'>
-            <span className='font-mulish text-[16px] text-white'>Before buying car insurance online, read the policy details and fine print, and ask questions to clarify anything you need help understanding. Regularly reviewing your car insurance policy can help ensure that it continues to meet your needs and that you're not overpaying for coverage you don't need.</span>
+            <span className='font-mulish text-[16px] text-white'>Before buying car insurance online, read the policy details and fine print, and ask questions to clarify anything you need help understanding. Regularly reviewing your car insurance policy can help ensure that it continues to meet your needs and that youre not overpaying for coverage you dont need.</span>
         </div>
     </div>
   )
