@@ -4,6 +4,7 @@ import CarModel from "@/components/carModel/CarModel";
 import Details from "@/components/details/Details";
 import Policy from "@/components/policy/Policy";
 import Product from "@/components/product/Product";
+import Quations from "@/components/quations/Quations";
 import Review from "@/components/review/Review";
 import Search from "@/components/search/Search";
 import TypeInsurance from "@/components/typeInsurance/TypeInsurance";
@@ -20,6 +21,7 @@ export default function Home() {
       <TypeInsurance/>
       <Policy/>
       <Buy/>
+      <Quations/>
       <CarModel/>
       <Search/>
       <Product/>
