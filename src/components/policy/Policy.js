@@ -12,7 +12,7 @@ function Policy() {
   return (
     <div className='bg-blue-900 p-10 py-0'>
         <div className='pt-6 pb-2.5'>
-            <h1 className='font-mulish text-[36px] text-center text-white'>How to choose the right car insurance policy online?</h1>
+            <h1 className='font-mulish text-[36px] text-center text-white pb-5'>How to choose the right car insurance policy online?</h1>
         </div>
         <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-6'>
 

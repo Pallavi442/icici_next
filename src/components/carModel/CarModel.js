@@ -8,7 +8,9 @@ import carModel4 from '../../assets/carModel4.svg';
 function CarModel() {
   return (
     <div className='bg-blue-900 p-10'>
-        <h1 className='font-mulish text-[36px] text-center text-white'>Car Insurance for Popular Models in India</h1>
+       <h1 className='font-mulish text-[36px] text-center text-white pb-5'>
+  Car Insurance for Popular Models in India
+</h1>
         <div className='grid md:grid-cols-4 gap-6'>
             <div className='flex bg-white items-center space-x-2 justify-center rounded-2xl p-2'>
                 <Image src={carModel1} alt="carModel"/>

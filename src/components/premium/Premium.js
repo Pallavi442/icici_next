@@ -16,8 +16,8 @@ function Premium() {
             <Image src={oneP} alt="oneP"/>
             <span className='font-mulish text-[15px] font-semibold'>Third-party liability premium – this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your car’s cubic capacity.</span>
             </div>
-            <div className=" w-full overflow-hidden rounded-2xl py-5">
-            <table className="w-full table-auto text-left border-separate border-spacing-0">
+            <div className="w-full overflow-hidden rounded-2xl bg-white shadow-md">
+            <table className="w-full table-auto text-left border-separate border-spacing-0 p-0 m-0">
                     <thead>
                         <tr className="bg-[rgba(225,224,209,1)] text-black">
                             <th className="px-4 py-3 border-r border-gray-300 w-1/3">
