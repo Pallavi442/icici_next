@@ -6,15 +6,16 @@ import Image from 'next/image'
 
 function NavbarBottom() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
     return (
         <div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)] text-white py-2 px-4'>
             <div className='flex justify-between items-center'>
-                {/* Left: Logo + Nav (desktop only) */}
+          
                 <div className='flex items-center gap-6'>
                     <Image src={logo} width={150} height={150} alt='logo' />
 
-                    {/* Nav Menu - visible only on md and up */}
+         
                     <ul className="hidden lg:flex space-x-6">
                         {["Car Insurance", "Two Wheeler Insurance", "Health Insurance", "Travel Insurance", "Other Insurance", "Claims"].map((item) => (
                             <li key={item} className="relative group cursor-pointer">
@@ -69,11 +70,15 @@ function NavbarBottom() {
 
             {/* Mobile dropdown menu */}
             {isOpen && (
-                    <>
-                     <ul className=" lg:flex flex-col lg:hidden mt-2 ">
-                        {["Car Insurance", "Two Wheeler Insurance", "Health Insurance", "Travel Insurance", "Other Insurance", "Claims"].map((item) => (
-                            <li key={item} className="relative group cursor-pointer">
-                                <div className="flex items-center space-x-2">
+                <>
+                    <ul className=" lg:flex flex-col lg:hidden mt-2 ">
+                    {["Car Insurance", "Two Wheeler Insurance", "Health Insurance", "Travel Insurance", "Other Insurance", "Claims"].map((item,index) => (
+                        
+                            <li key={item} className="relative  cursor-pointer">
+                                <div className="flex items-center space-x-2" onClick={() =>
+                                        setActiveDropdown(
+                                            activeDropdown === index ? null : index
+                                        )}>
                                     <span>{item}</span>
                                     <span className="pt-[5px]">
                                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,15 +86,21 @@ function NavbarBottom() {
                                         </svg>
                                     </span>
                                 </div>
-                                <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                                    <a href="#" className="block px-4 py-2 hover:bg-gray-200">Option 1</a>
-                                    <a href="#" className="block px-4 py-2 hover:bg-gray-200">Option 2</a>
-                                </div>
+                                {activeDropdown === index && (
+                                    <div className="mt-2 ml-4 bg-white text-black shadow-lg rounded-md overflow-hidden">
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                                            Option 1
+                                        </a>
+                                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                                            Option 2
+                                        </a>
+                                    </div>
+                                )}
                             </li>
                         ))}
                     </ul>
                     <div className="px-4 py-2">Login</div>
-                    </>
+                </>
             )}
         </div>
     )
