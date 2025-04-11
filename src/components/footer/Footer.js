@@ -12,7 +12,7 @@ function Footer() {
     return (
         <div className='py-10'>
             <hr className="border-gray-400" />
-            <div className='py-5 px-5 flex justify-between'>
+            <div className='py-5 px-5 flex flex-col flex-wrap justify-between lg:flex-row'>
                 <div>
                     <ul className='flex gap-2'>
                         {["Home", "Motor Insurance", "Car Insurance"].map((item, index, arr) => (

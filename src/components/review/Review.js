@@ -6,15 +6,15 @@ import reviewImg3 from '../../assets/reviewImg3.png';
 
 function Review() {
   return (
-    <div className='bg-[#f8f6f6] p-10'>
+    <div className='bg-[#f8f6f6] py-10 px-5'>
         <div>
           <p className='font-mulish text-[30px] text-center'><b>Why our customers love us?</b></p>
           <p className='font-mulish text-[14px] text-center'>And, we think you will too.</p>
         </div>
 
-        <div className='flex flex-wrap justify-evenly bg-[#f6f6f6] mt-4'>
+        <div className='flex flex-wrap flex-col  bg-[#f6f6f6] gap-4  items-center justify-center mt-4 lg:flex-row'>
 
-          <div className='flex bg-white p-7 gap-2 rounded-xl'>
+          <div className='flex bg-white py-7 px-20 gap-2 rounded-xl'>
             <div>
               <Image src={reviewImg1} alt="img"/>
             </div>
@@ -24,7 +24,7 @@ function Review() {
             </div>
           </div>
 
-          <div className='flex bg-white p-7 gap-2 rounded-xl'>
+          <div className='flex bg-white py-7 px-20 gap-2 rounded-xl'>
             <div>
               <Image src={reviewImg3} alt="img"/>
             </div>
@@ -34,7 +34,7 @@ function Review() {
             </div>
           </div>
 
-          <div className='flex bg-white p-7 gap-2 rounded-xl'>
+          <div className='flex bg-white py-7 px-20 gap-2 rounded-xl'>
             <div>
               <Image src={reviewImg2} alt="img"/>
             </div>

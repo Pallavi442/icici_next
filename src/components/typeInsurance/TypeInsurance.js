@@ -2,7 +2,7 @@ import React from 'react';
 
 function TypeInsurance() {
     return (
-        <div className="flex flex-col items-center  md:px-24 lg:px-48 py-10">
+        <div className="flex flex-col items-center  md:px-24 lg:px-48 py-10  px-3 sm:px-0">
             <h1 className="font-mulish text-[28px] md:text-[36px] text-center mb-8">
                 Comprehensive car insurance vs Third party car insurance
             </h1>
@@ -10,10 +10,10 @@ function TypeInsurance() {
                 <table className="w-full table-auto text-left border-separate border-spacing-0">
                     <thead>
                         <tr className="bg-[rgba(225,224,209,1)] text-black">
-                            <th className="px-4 py-3 border-r border-gray-300 w-1/2">
+                            <th className="px-4 py-3 border-r border-gray-300 md:w-1/2">
                                 Comprehensive Car Insurance
                             </th>
-                            <th className="px-4 py-3 w-1/2">
+                            <th className="px-4 py-3 md:w-1/2">
                                 Third-Party Car Insurance
                             </th>
                         </tr>

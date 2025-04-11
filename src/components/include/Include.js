@@ -49,8 +49,8 @@ const Include = () => {
             {activeLink === "/Inclusions" && (
                 <div className='pb-5'>
                     <span className='font-semibold'>What’s included:</span>
-                    <div className=' flex w-fill py-2'>
-                        <div className='w-1/2'>
+                    <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
+                        <div className='sm:w-3/4 md:w-1/2'>
                             <ul className='flex gap-4 flex-col'>
                                 {list.map((item, index, arr) => (
                                     <li key={index} className="flex gap-2 items-center">
@@ -62,7 +62,7 @@ const Include = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className='w-1/2'>
+                        <div className='sm:w-3/4 md:w-1/2'>
                             <ul className='flex gap-4 flex-col'>
                                 {list2.map((item, index, arr) => (
                                     <li key={index} className="flex gap-2 items-center">
@@ -84,15 +84,14 @@ const Include = () => {
                 </div>
             )}
             <hr className="border-b-2 border-[#C9C9C9]" />
-            <div className='flex gap-4 py-10'>
+            <div className='flex text-center md:text-start flex-wrap gap-4 py-10'>
                 <span>Policy documents:</span>
                 <a href="" className="text-[rgb(236_102_8/1)] underline underline-offset-1">Private car package policy wordings</a>
-                <span>|</span>
+                <span className='hidden md:block'>|</span>
                 <a href="" className="text-[rgb(236_102_8/1)] underline underline-offset-1">Stand-alone own damage private car insurance policy wording</a>
-                <span>|</span>
+                <span className='hidden md:block'>|</span>
                 <a href="" className="text-[rgb(236_102_8/1)] underline underline-offset-1">Private car liability policy wording</a>
             </div>
-
         </div>
     )
 }

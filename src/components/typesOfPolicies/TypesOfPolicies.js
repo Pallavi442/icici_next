@@ -31,44 +31,41 @@ const swipperArr = [
 
 function TypesOfPolicies() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [activeButton, setActiveButton] = useState(null);
 
     const handlePrev = () => {
-        setActiveButton('prev');
-        setTimeout(() => setActiveButton(null), 200);
         setCurrentIndex((prev) => (prev === 0 ? swipperArr.length - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setActiveButton('next');
-        setTimeout(() => setActiveButton(null), 200);
         setCurrentIndex((prev) => (prev === swipperArr.length - 1 ? 0 : prev + 1));
     };
 
     return (
-        <div className="bg-[rgba(255,242,235,1)] p-10">
-            <h1 className="font-mulish text-[36px] text-center font-bold my-3">
+        <div className="bg-[rgba(255,242,235,1)] px-4 sm:px-6 lg:px-10 py-10">
+            <h1 className="font-mulish text-[24px] sm:text-[30px] lg:text-[36px] text-center font-bold mb-6">
                 What are the different types of car insurance policies?
             </h1>
 
-            <div className="flex items-center justify-center gap-6">
-
+            <div className="flex items-center justify-center gap-6 ">
                 <button
                     onClick={handlePrev}
                     className="p-4 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110"
                 >
                     <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />
                 </button>
-                <div className="flex gap-4 bg-white p-10 rounded-2xl max-w-4xl">
-                    <Image src={swipperImg} alt="swipper img" width={80} height={80} />
+
+                <div className="flex flex-col sm:flex-row items-center gap-4 bg-white p-6 sm:p-8 rounded-2xl max-w-4xl w-full">
+                    <div className="flex-shrink-0">
+                        <Image src={swipperImg} alt="swipper img" width={150} height={150}/>
+                    </div>
                     <div className="space-y-3">
-                        <p className="font-mulish text-[16px] text-left font-bold">
+                        <p className="font-mulish text-[16px] font-bold">
                             {swipperArr[currentIndex].title}
                         </p>
-                        <p className="font-mulish text-[16px] text-left">
+                        <p className="font-mulish text-[15px] sm:text-[16px] leading-relaxed">
                             {swipperArr[currentIndex].description1}
                         </p>
-                        <p className="font-mulish text-[16px] text-left">
+                        <p className="font-mulish text-[15px] sm:text-[16px] leading-relaxed">
                             {swipperArr[currentIndex].description2}
                         </p>
                     </div>

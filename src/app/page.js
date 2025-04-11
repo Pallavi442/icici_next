@@ -7,6 +7,7 @@ import Policy from "@/components/policy/Policy";
 import Premium from "@/components/premium/Premium";
 import Product from "@/components/product/Product";
 import Quations from "@/components/quations/Quations";
+import Ratings from "@/components/ratings/Ratings";
 import Review from "@/components/review/Review";
 import Search from "@/components/search/Search";
 import TypeInsurance from "@/components/typeInsurance/TypeInsurance";
@@ -27,6 +28,7 @@ export default function Home() {
       <Premium />
       <Quations />
       <CarModel />
+      <Ratings/>
       <Search />
       <Product />
     </div>

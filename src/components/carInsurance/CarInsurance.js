@@ -8,9 +8,10 @@ import New from '../../assets/New.png';
 import InsuranceForm from '../insuranceForm/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex w-full p-10">
+        <div className="flex flex-wrap w-full p-10">
             
-            <div className="w-1/3">
+            <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">
+
                 <div className='flex flex-col gap-5'>
                     <div>
                         <p className='font-mulish font-black text-[40px] '>Car Insurance</p>
@@ -49,10 +50,10 @@ function CarInsurance() {
                 </div>
             </div>
 
-            <div className="w-1/3 pt-16">
+            <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-16">
                 <Image src={car} alt="car" />
             </div>
-            <div className="w-1/3">
+            <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-6 lg:pt-0">
                 <InsuranceForm />
             </div>
 
