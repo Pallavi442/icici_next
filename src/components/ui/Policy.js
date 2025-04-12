@@ -10,31 +10,31 @@ import six from '../../../public/images/six.svg';
 
 function Policy() {
   return (
-    <div className='bg-blue-900 p-10 py-0'>
+    <div className='bg-blue-900 p-4 py-0 md:p-10'>
         <div className='pt-6 pb-2.5'>
             <h1 className='font-mulish  md:text-[36px] text-[20px]  text-center text-white pb-5'>How to choose the right car insurance policy online?</h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-20">
 
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 md:p-10 items-start'>
                <Image src={one} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
-                <span className='font-mulish text-[14px] md:text-[18px]  text-white'><b>What kind of coverage you need:</b></span>
-                <span className='font-mulish text-[12px] md:text-[16px]  text-white'>Choose from options like liability, collision, comprehensive, or personal injury protection.</span>
+                <span className='font-mulish text-[16px] md:text-[18px]  text-white'><b>What kind of coverage you need:</b></span>
+                <span className='font-mulish text-[14px] md:text-[16px]  text-white'>Choose from options like liability, collision, comprehensive, or personal injury protection.</span>
                </div>
             </div>
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start '>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 md:p-10  items-start '>
                <Image src={two} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
-                <span className='font-mulish text-[14px] md:text-[18px]  text-white' ><b>How much your car is worth:</b></span>
-                <span className='font-mulish text-[12px] md:text-[16px]  text-white'>Make sure the cost of your insurance policy matches your vehicles value..</span>
+                <span className='font-mulish text-[16px] md:text-[18px]  text-white' ><b>How much your car is worth:</b></span>
+                <span className='font-mulish text-[14px] md:text-[16px]  text-white'>Make sure the cost of your insurance policy matches your vehicles value..</span>
                </div>
             </div>
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 md:p-10 items-start'>
                <Image src={three} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
-                <span className='font-mulish text-[14px] md:text-[18px]   text-white'><b>How you drive:</b></span>
-                <span className='font-mulish text-[12px] md:text-[16px]  text-white'>Your driving habits, such as how often you drive and what type of driving you do, can affect the cost of the insurance if you opt for pay-as-you-drive or pay-how-you-drive policies.</span>
+                <span className='font-mulish text-[16px] md:text-[18px]   text-white'><b>How you drive:</b></span>
+                <span className='font-mulish text-[14px] md:text-[16px]  text-white'>Your driving habits, such as how often you drive and what type of driving you do, can affect the cost of the insurance if you opt for pay-as-you-drive or pay-how-you-drive policies.</span>
                </div>
             </div>
            

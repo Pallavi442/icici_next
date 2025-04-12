@@ -7,7 +7,6 @@ import Image from 'next/image'
 function NavbarBottom() {
     const [isOpen, setIsOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
-
     return (
         <div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)] text-white py-2 px-4'>
             <div className='flex justify-between items-center'>
@@ -15,7 +14,6 @@ function NavbarBottom() {
                 <div className='flex items-center gap-6'>
                     <Image src={logo} width={150} height={150} alt='logo' />
 
-         
                     <ul className="hidden lg:flex space-x-6">
                         {["Car Insurance", "Two Wheeler Insurance", "Health Insurance", "Travel Insurance", "Other Insurance", "Claims"].map((item) => (
                             <li key={item} className="relative group cursor-pointer">
@@ -36,7 +34,6 @@ function NavbarBottom() {
                     </ul>
                 </div>
 
-                {/* Right: Login & toggle */}
                 <div className='flex items-center gap-4'>
                     <div className="hidden lg:flex items-center gap-2">
                         <span>Login</span>
@@ -45,7 +42,7 @@ function NavbarBottom() {
                         </svg>
                     </div>
 
-                    {/* Hamburger for mobile */}
+                 
                     <button
                         className="lg:hidden focus:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
@@ -67,11 +64,9 @@ function NavbarBottom() {
                     </button>
                 </div>
             </div>
-
-            {/* Mobile dropdown menu */}
             {isOpen && (
                 <>
-                    <ul className=" lg:flex flex-col lg:hidden mt-2 ">
+                    <ul className=" lg:flex flex-col lg:hidden mt-2 bg-gray-200 text-black">
                     {["Car Insurance", "Two Wheeler Insurance", "Health Insurance", "Travel Insurance", "Other Insurance", "Claims"].map((item,index) => (
                         
                             <li key={item} className="relative  cursor-pointer">

@@ -30,7 +30,7 @@ function NavbarTop() {
         </div>
       </div>
       <div className="flex ">
-        <ul className="md:flex flex-wrap space-x-6 hidden"  style={{paddingRight:"10px"}}>
+        <ul className="flex flex-wrap space-x-2 text-[12px]  mt-2 sm:text-[16px] sm:mt-0 lg:space-x-6">
           {["Renewals", "Support", "Info Center", "Investor Relations"].map((item) => (
             <li key={item} className="relative group">
               <div className="flex items-center space-x-2 cursor-pointer">

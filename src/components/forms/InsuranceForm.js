@@ -27,7 +27,7 @@ function InsuranceForm(){
             <label>I agree to the <a className="underline underline-offset-1">terms and conditions</a></label>
             </div>
          </form>
-         <div className="text-center bg-gradient-to-b from-[#FFFEB] via-[#FFF7F2] to-white">
+         <div className="text-center bg-[#FFF2EB] rounded-b-2xl mx-6 py-2">
          <span className="text-[rgb(236_102_8/1)] underline underline-offset-1">Renew your ICICI Lombard policy</span>
          </div>
         

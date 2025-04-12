@@ -13,21 +13,21 @@ function Premium() {
       </h1>
 
       <div className="w-full flex flex-col justify-center items-start gap-8 lg:flex-row lg:items-start">
-        {/* Left Section */}
+
         <div className="w-full lg:w-1/2">
           <span className="block mb-4">
             Your car insurance premium includes three major components
           </span>
 
-          {/* Point 1 */}
+
           <div className="flex py-3 gap-3 items-start">
-            <Image src={oneP} alt="oneP" />
+            <Image src={oneP} alt="oneP" className='mt-2'  />
             <span className="font-mulish text-[15px] font-semibold">
               Third-party liability premium – this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your car’s cubic capacity.
             </span>
           </div>
 
-          {/* Table */}
+
           <div className="overflow-x-auto rounded-2xl bg-white shadow-md w-full mb-6">
             <table className="min-w-[500px] table-auto text-left border-separate border-spacing-0">
               <thead>
@@ -53,24 +53,24 @@ function Premium() {
             </table>
           </div>
 
-          {/* Point 2 */}
+     
           <div className="flex py-3 gap-3 items-start">
-            <Image src={twoP} alt="twoP" />
+            <Image src={twoP} alt="twoP" className='mt-2' />
             <span className="font-mulish text-[15px] font-semibold">
               Own damage premium – this is calculated as IDV X [Tariff Rate] – [Discounts] + Add on Covers
             </span>
           </div>
 
-          {/* Point 3 */}
+  
           <div className="flex py-2 gap-3 items-start">
-            <Image src={threeP} alt="threeP" />
+            <Image src={threeP} alt="threeP" className='mt-2'  />
             <span className="font-mulish text-[15px] font-semibold">
               Personal accident cover premium + Additional covers
             </span>
           </div>
         </div>
 
-        {/* Right Section */}
+
         <div className="w-full lg:w-1/2">
           <span className="font-mulish text-[15px] font-semibold block mb-3">
             Factors that affect these three components and your final car insurance price, include:
@@ -128,7 +128,7 @@ function Premium() {
             },
           ].map((item, i) => (
             <div key={i} className="flex py-2 gap-3 items-start">
-              <Image src={arrowLeft} alt="arrow" />
+              <Image src={arrowLeft} alt="arrow" className='mt-2'  />
               <span className="font-mulish text-[16px]">{item.text}</span>
             </div>
           ))}

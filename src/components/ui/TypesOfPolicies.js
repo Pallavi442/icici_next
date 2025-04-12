@@ -31,6 +31,7 @@ const swipperArr = [
 
 function TypesOfPolicies() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isActive, setIsActive] = useState(false);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? swipperArr.length - 1 : prev - 1));

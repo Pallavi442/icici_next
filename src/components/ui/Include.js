@@ -84,18 +84,18 @@ const Include = () => {
                 </div>
             )}
             <hr className="border-b-2 border-[#C9C9C9]" />
-            <div className="flex flex-col items-start md:flex-row md:items-center md:flex-wrap text-start gap-2 md:gap-4 py-10">
+            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 py-10">
                 <span className="font-medium">Policy documents:</span>
 
                 <a href="#" className="text-[rgb(236_102_8/1)] underline underline-offset-1">
                     Private car package policy wordings
                 </a>
-                <span className="hidden md:inline">|</span>
+                <span className="hidden lg:inline">|</span>
 
                 <a href="#" className="text-[rgb(236_102_8/1)] underline underline-offset-1">
                     Stand-alone own damage private car insurance policy wording
                 </a>
-                <span className="hidden md:inline">|</span>
+                <span className="hidden lg:inline">|</span>
 
                 <a href="#" className="text-[rgb(236_102_8/1)] underline underline-offset-1">
                     Private car liability policy wording

@@ -10,7 +10,7 @@ import twitter from '../../../public/images/twitter.svg';
 
 function Footer() {
     return (
-        <div className='py-10'>
+        <div className='pt-10'>
             <hr className="border-gray-400" />
             <div className="py-5 px-5 flex flex-wrap items-center justify-between gap-y-2">
                 <ul className="flex flex-wrap gap-2 items-center">
