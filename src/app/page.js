@@ -1,22 +1,22 @@
-import Buy from "@/components/buy/Buy";
-import CarInsurance from "@/components/carInsurance/CarInsurance";
-import CarModel from "@/components/carModel/CarModel";
-import Details from "@/components/details/Details";
-import Include from "@/components/include/Include";
-import Policy from "@/components/policy/Policy";
-import Premium from "@/components/premium/Premium";
-import Product from "@/components/product/Product";
-import Quations from "@/components/quations/Quations";
-import Ratings from "@/components/ratings/Ratings";
-import Review from "@/components/review/Review";
-import Search from "@/components/search/Search";
-import TypeInsurance from "@/components/typeInsurance/TypeInsurance";
-import TypesOfPolicies from "@/components/typesOfPolicies/TypesOfPolicies";
-import Image from "next/image";
+import Buy from "@/components/ui/Buy";
+import CarInsurance from "@/components/ui/CarInsurance";
+import CarModel from "@/components/ui/CarModel";
+import Details from "@/components/ui/Details";
+import Include from "@/components/ui/Include";
+import Policy from "@/components/ui/Policy";
+import Premium from "@/components/ui/Premium";
+import Product from "@/components/ui/Product";
+import Quations from "@/components/ui/Quations";
+import Ratings from "@/components/ui/Ratings";
+import Review from "@/components/ui/Review";
+import Search from "@/components/ui/Search";
+import TypeInsurance from "@/components/ui/TypeInsurance";
+import TypesOfPolicies from "@/components/ui/TypesOfPolicies";
+
 
 export default function Home() {
   return (
-    <div >
+    <div className="pt-[80px]">
       <CarInsurance />
       <Review />
       <Details />
@@ -28,7 +28,7 @@ export default function Home() {
       <Premium />
       <Quations />
       <CarModel />
-      <Ratings/>
+      <Ratings />
       <Search />
       <Product />
     </div>
