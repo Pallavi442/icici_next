@@ -16,7 +16,7 @@ function Buy() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-20">
       
 
-                <div className='flex  gap-4 bg-white p-4 md:p-10 rounded-2xl items-start'>
+                <div className='flex px-10 gap-4 bg-white p-4 md:p-10 rounded-2xl items-start'>
                     <Image src={buy1} alt='buy1' className='mt-2' />
                     <div>
                         <span className='font-semibold text-[12px] md:text-[16px]'>Policy coverage</span>
@@ -46,7 +46,7 @@ function Buy() {
                     </div>
                 </div>
 
-                <div className='flex px-10 gap-4  bg-white p-4 p-4 md:p-10  rounded-2xl items-start'>
+                <div className='flex px-10 gap-4  bg-white p-4 md:p-10  rounded-2xl items-start'>
                     <Image src={buy4} alt='buy4' className='mt-2' />
                     <div>
                     <span className='font-semibold text-[12px] md:text-[16px]'>Right Insured Declared Value (IDV)</span>

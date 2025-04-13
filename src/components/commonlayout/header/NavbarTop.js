@@ -3,8 +3,8 @@ import React from 'react'
 
 function NavbarTop() {
   return (
-    <div className="w-full flex  flex-wrap justify-between p-3 bg-[#f8f6f6]">
-      <div className="flex  flex-wrap gap-2">
+    <div className="w-full flex flex-wrap justify-between p-3 bg-[#f8f6f6]">
+      <div className="flex flex-wrap gap-2">
         <div className="flex gap-2 items-center">
           <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M14.9984 0.962891C10.5665 0.962891 6.96094 4.56847 6.96094 9.00032C6.96094 13.4322 10.5665 17.0378 14.9984 17.0378C19.4302 17.0378 23.0358 13.4322 23.0358 9.00032C23.0358 4.56847 19.4302 0.962891 14.9984 0.962891ZM15 18C10.0374 18 6 13.9626 6 9C6 4.03739 10.0374 0 15 0C19.9626 0 24 4.03739 24 9C24 13.9626 19.9626 18 15 18Z" fill="#282828" />
@@ -35,7 +35,14 @@ function NavbarTop() {
             <li key={item} className="relative group">
               <div className="flex items-center space-x-2 cursor-pointer">
                 <span>{item}</span>
-                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="transform transition-transform duration-200 group-hover:rotate-180"
+                  width="8"
+                  height="5"
+                  viewBox="0 0 8 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -44,7 +51,7 @@ function NavbarTop() {
                   />
                 </svg>
               </div>
-              <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+              <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10 rounded-md ">
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">Option 1</a>
                 <a href="#" className="block px-4 py-2 hover:bg-gray-200">Option 2</a>
               </div>

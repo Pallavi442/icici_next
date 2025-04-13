@@ -39,21 +39,21 @@ function Policy() {
             </div>
            
 
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start '>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 items-start '>
                <Image src={four} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
                 <span className='font-mulish text-[14px] md:text-[18px]  text-white'><b>How much youre willing to pay out of pocket:</b></span>
                 <span className='font-mulish text-[12px] md:text-[16px]  text-white'>Think about your budget and how much risk youre comfortable with. In case of an accident, if youre not comfortable spending money from your own pocket for your car repairs, opt for the Own Damage cover instead of a Third-party policy.</span>
                </div>
             </div>
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 items-start'>
                <Image src={five} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
                 <span className='font-mulish text-[14px] md:text-[18px]   text-white'><b>Where you live:</b></span>
                 <span className='font-mulish text-[12px] md:text-[16px]  text-white'>Car insurance online costs can differ based on traffic and crime in your area.</span>
                </div>
             </div>
-            <div className='flex gap-3 rounded-xl border border-blue-500 p-10 items-start'>
+            <div className='flex gap-3 rounded-xl border border-blue-500 p-4 items-start'>
                <Image src={six} alt="one" className='pt-2'/>
                <div className='flex flex-col'>
                 <span className='font-mulish text-[14px] md:text-[18px]  text-white'><b>Discounts:</b></span>

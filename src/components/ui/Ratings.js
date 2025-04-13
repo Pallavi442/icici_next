@@ -6,6 +6,9 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import star1 from '../../../public/images/star1.svg';
 import star2 from '../../../public/images/star2.svg';
 import quote from '../../../public/images/quote.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper';
 
 const reviews = [
   {
@@ -42,7 +45,7 @@ const Ratings = () => {
     const handleResize = () => {
       setItemsPerView(window.innerWidth < 768 ? 1 : 2);
     };
-    handleResize(); 
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -73,13 +76,41 @@ const Ratings = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex items-center justify-center gap-6 pt-5">
-        <button
-          onClick={handlePrev}
-          className="p-4 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110"
+      <div className="md:hidden">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          onSlideChange={() => setCurrentIndex((prev) => (prev + 1) % reviews.length)}
+          loop={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
         >
-          <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />
-        </button>
+          {reviews.map((review, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="text-left space-y-4">
+                <div className="flex items-center space-x-4">
+                  <p className="font-bold text-lg">{review.name}</p>
+                  <Image src={review.ratingImg} alt="stars" width={80} height={16} />
+                  <Image src={quote} alt="quote" width={50} height={50} />
+                </div>
+                <p className="text-gray-700 text-sm">{review.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="hidden md:flex items-center justify-center gap-6 pt-5">
+        <div className="hidden md:flex items-center justify-center gap-6 pt-5">
+          <button
+            onClick={handlePrev}
+            className="p-5 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110 w-14 h-14 flex items-center justify-center"
+          >
+            <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />
+          </button>
+        </div>
 
         <div className="bg-white p-6 max-w-3xl w-full">
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8`}>
@@ -98,26 +129,14 @@ const Ratings = () => {
 
         <button
           onClick={handleNext}
-          className="p-4 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110"
+          className="p-5 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110 w-14 h-14 flex items-center justify-center"
         >
           <FontAwesomeIcon icon={faArrowRight} className="text-2xl" />
         </button>
       </div>
 
-      <div className="md:hidden bg-white p-6 max-w-xl w-full mx-auto">
-        <div className="space-y-4 text-left">
-          <div className="flex items-center space-x-4">
-            <p className="font-bold text-lg">{reviews[currentIndex].name}</p>
-            <Image src={reviews[currentIndex].ratingImg} alt="stars" width={80} height={16} />
-            <Image src={quote} alt="quote" width={20} height={20} />
-          </div>
-          <p className="text-gray-700 text-sm">{reviews[currentIndex].description}</p>
-        </div>
-      </div>
-
-     
       <div className="flex flex-col items-center pt-6">
-        <div className="flex space-x-2 gap-2">
+        <div className="flex space-x-2 gap-2 hidden md:flex">
           {Array.from({ length: Math.ceil(reviews.length / itemsPerView) }).map((_, i) => (
             <span
               key={i}
@@ -128,20 +147,6 @@ const Ratings = () => {
 
         <button className="mt-4 px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-xl hover:bg-orange-500 hover:text-white transition">
           Read all reviews
-        </button>
-      </div>
-      <div className="md:hidden flex justify-center gap-6 mt-6">
-        <button
-          onClick={handlePrev}
-          className="p-3 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110"
-        >
-          <FontAwesomeIcon icon={faArrowLeft} className="text-xl" />
-        </button>
-        <button
-          onClick={handleNext}
-          className="p-3 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110"
-        >
-          <FontAwesomeIcon icon={faArrowRight} className="text-xl" />
         </button>
       </div>
     </div>
