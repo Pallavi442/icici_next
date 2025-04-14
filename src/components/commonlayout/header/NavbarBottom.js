@@ -54,7 +54,7 @@ function NavbarBottom() {
                     </span>
                   </div>
                   {hoveredDropdown === index && (
-                    <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg z-10 rounded-md overflow-hidden">
+                    <div className="absolute left-0 w-40 bg-white text-black shadow-lg z-10 rounded-md overflow-hidden">
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 1</a>
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 2</a>
                     </div>

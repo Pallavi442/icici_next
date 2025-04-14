@@ -83,7 +83,7 @@ const Ratings = () => {
           onSlideChange={() => setCurrentIndex((prev) => (prev + 1) % reviews.length)}
           loop={true}
           autoplay={{
-            delay: 1000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}

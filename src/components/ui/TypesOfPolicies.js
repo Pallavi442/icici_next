@@ -84,7 +84,7 @@ function TypesOfPolicies() {
           modules={[Autoplay]}
           spaceBetween={10}
           slidesPerView={1}
-          autoplay={{ delay: 1000, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
         >
           {swipperArr.map((item, idx) => (
