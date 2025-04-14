@@ -79,9 +79,35 @@ const Include = () => {
             )}
 
             {activeLink === "/Exclusions" && (
-                <div className='my-10 text-center px-4'>
-                    <p>Exclusion details</p>
-                </div>
+                 <div className='pb-5'>
+                 <span className='font-semibold'>What’s excluded:</span>
+                 <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
+                     <div className='sm:w-3/4 md:w-1/2'>
+                         <ul className='flex gap-4 flex-col'>
+                             {list.map((item, index, arr) => (
+                                 <li key={index} className="flex gap-2 items-center">
+
+
+                                     <Image src={check} alt="check" />
+                                     <a>{item.text}</a>
+                                 </li>
+                             ))}
+                         </ul>
+                     </div>
+                     <div className='sm:w-3/4 md:w-1/2'>
+                         <ul className='flex gap-4 flex-col'>
+                             {list2.map((item, index, arr) => (
+                                 <li key={index} className="flex gap-2 items-center">
+
+
+                                     <Image src={check} alt="check" />
+                                     <a>{item.text}</a>
+                                 </li>
+                             ))}
+                         </ul>
+                     </div>
+                 </div>
+             </div>
             )}
             <hr className="border-b-2 border-[#C9C9C9]" />
             <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 py-10">
