@@ -53,7 +53,8 @@ function TypesOfPolicies() {
           onClick={handlePrev}
          className="p-5 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110 w-14 h-14 flex items-center justify-center"
         >
-          <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />
+          <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />  
+          
         </button>
 
         <div className="flex flex-col sm:flex-row items-center bg-white sm:p-8 rounded-2xl mx-4 w-full">
