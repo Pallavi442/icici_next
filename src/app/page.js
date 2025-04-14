@@ -13,24 +13,23 @@ import Search from "@/components/ui/Search";
 import TypeInsurance from "@/components/ui/TypeInsurance";
 import TypesOfPolicies from "@/components/ui/TypesOfPolicies";
 
-
 export default function Home() {
   return (
-    <div className="pt-[80px]">
-      <CarInsurance />
-      <Review />
-      <Details />
-      <TypesOfPolicies />
-      <TypeInsurance />
-      <Policy />
-      <Include />
-      <Buy />
-      <Premium />
-      <Quations />
-      <CarModel />
-      <Ratings />
-      <Search />
-      <Product />
+    <div className="pt-[100px]">
+        <CarInsurance />
+        <Review />
+        <Details />
+        <TypesOfPolicies />
+        <TypeInsurance />
+        <Policy />
+        <Include />
+        <Buy />
+        <Premium />
+        <Quations />
+        <CarModel />
+        <Ratings />
+        <Search />
+        <Product />
     </div>
   );
 }

@@ -3,7 +3,8 @@ import React from 'react'
 
 function NavbarTop() {
   return (
-    <div className="w-full flex flex-wrap justify-between p-3 bg-[#f8f6f6]">
+    <div className='bg-[#f8f6f6]'>
+    <div className="w-full flex flex-wrap justify-between py-3 max-w-[1440px] mx-auto px-5">
       <div className="flex flex-wrap gap-2">
         <div className="flex gap-2 items-center">
           <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +31,7 @@ function NavbarTop() {
         </div>
       </div>
       <div className="flex ">
-        <ul className="flex flex-wrap space-x-2 text-[12px]  mt-2 sm:text-[16px] sm:mt-0 lg:space-x-6">
+      <ul className="flex flex-wrap space-x-2 text-xs mt-2 sm:text-base sm:mt-0 lg:space-x-6">
           {["Renewals", "Support", "Info Center", "Investor Relations"].map((item) => (
             <li key={item} className="relative group">
               <div className="flex items-center space-x-2 cursor-pointer">
@@ -59,6 +60,7 @@ function NavbarTop() {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   )
 }

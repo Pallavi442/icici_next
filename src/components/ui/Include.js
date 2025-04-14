@@ -20,8 +20,8 @@ const Include = () => {
     const [activeLink, setActiveLink] = useState("/Inclusions")
 
     return (
-        <div className='p-4 sm:p-6 lg:p-10'>
-            <div className='text-center mb-6'>
+        <div className='py-4 sm:p-6 lg:p-10 max-w-[1440px] mx-auto overflow-hidden'>
+            <div className='text-center'>
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
@@ -110,7 +110,7 @@ const Include = () => {
              </div>
             )}
             <hr className="border-b-2 border-[#C9C9C9]" />
-            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 py-10">
+            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 pt-5">
                 <span className="font-medium">Policy documents:</span>
 
                 <a href="#" className="text-[rgb(236_102_8/1)] underline underline-offset-1">

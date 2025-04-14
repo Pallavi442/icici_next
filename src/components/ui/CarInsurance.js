@@ -8,15 +8,18 @@ import New from '../../../public/images/New.png';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex flex-wrap w-full p-10">
+        <div className="flex flex-wrap w-full py-10 max-w-[1440px] mx-auto overflow-hidden px-5">
             
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">
 
                 <div className='flex flex-col gap-5'>
                     <div>
-                        <p className='font-mulish font-black text-[40px] '>Car Insurance</p>
-                        <p className='font-mulish font-semibold text-[28px]'>Prices starting at just ₹2,094/yr</p>
-                        <p className='font-mulish font-normal text-[12px]'>This amount refers to the TP rates only</p>
+                   
+                        <p className='font-mulish font-black text-4xl mt-2'>Car Insurance</p>
+                        <p className='font-mulish font-semibold text-2xl mt-2'>Prices starting at just ₹2,094/yr</p>
+                        <p className='font-mulish font-normal text-xs mt-2'>This amount refers to the TP rates only</p>
+        
+                       
                         <div className='my-5 ml-2'><svg width="95" height="1" viewBox="0 0 95 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line y1="0.5" x2="95" y2="0.5" stroke="url(#paint0_linear_1_145)" />
                             <defs>
@@ -51,7 +54,7 @@ function CarInsurance() {
             </div>
 
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-16">
-                <Image src={car} alt="car" />
+                <Image src={car} alt="car" draggable={false} />
             </div>
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-6 lg:pt-0">
                 <InsuranceForm />

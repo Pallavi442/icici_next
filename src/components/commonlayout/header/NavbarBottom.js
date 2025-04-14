@@ -23,9 +23,8 @@ function NavbarBottom() {
   };
 
   return (
-    <>
-
-      <div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)] text-white py-2 px-4'>
+    < div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)]'>
+      <div className='text-white py-2 max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-6'>
             <Image src={logo} width={150} height={150} alt='logo' />
@@ -38,7 +37,7 @@ function NavbarBottom() {
                   onMouseEnter={() => setHoveredDropdown(index)}
                   onMouseLeave={() => setHoveredDropdown(null)}
                 >
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-2 text-xs  xl:text-base">
                     <span>{item}</span>
                     <span className="pt-[5px]">
                       {hoveredDropdown === index ? (
@@ -66,7 +65,7 @@ function NavbarBottom() {
 
           <div className='flex items-center gap-4'>
             <div className="hidden lg:flex items-center gap-2">
-              <span>Login</span>
+              <span className='text-xs  xl:text-base'>Login</span>
               <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M1.108 10L5.022 6.102L6.128 4.997L5.021 3.894L1.108 0L1.066 0.0430002L0.001 1.106L3.911 4.997L0 8.896L1.108 10Z" fill="white" />
               </svg>
@@ -115,7 +114,7 @@ function NavbarBottom() {
           <div className="px-5 pb-5 pt-4">Login</div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

@@ -63,7 +63,7 @@ const Ratings = () => {
   };
 
   return (
-    <div className="px-4 md:px-12 py-12 text-center">
+    <div className="px-4 md:px-12 py-5 text-center">
       <h2 className="text-3xl md:text-4xl font-semibold mb-4 pt-6">Ratings and reviews</h2>
 
       <div className="flex justify-center items-center mb-10 pt-5">

@@ -8,8 +8,9 @@ import carModel4 from '../../../public/images/carModel4.svg';
 
 function CarModel() {
   return (
-    <div className="bg-blue-900 px-4 py-10 sm:px-6 lg:px-10">
-      <h1 className="font-mulish text-[24px] sm:text-[30px] lg:text-[36px] text-center text-white pb-6">
+    <div className='bg-blue-900 w-full'>
+    <div className=" py-10  max-w-[1440px] mx-auto overflow-hidden w-[93%]">
+      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl text-center text-white pb-6">
         Car Insurance for Popular Models in India
       </h1>
 
@@ -26,13 +27,14 @@ function CarModel() {
         ].map((car, index) => (
           <div
             key={index}
-            className="flex items-center bg-white gap-4 justify-start rounded-2xl p-4 shadow-sm hover:shadow-md transition duration-200"
+            className="flex items-center bg-white gap-4 justify-start rounded-2xl py-5 px-10 shadow-sm hover:shadow-md transition duration-200"
           >
             <Image src={car.img} alt={car.name} className="w-[50px] h-auto" />
             <p className="text-sm sm:text-base font-medium">{car.name}</p>
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
