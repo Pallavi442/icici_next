@@ -14,7 +14,7 @@ function Policy() {
         <div className='pt-6 pb-2.5'>
             <h1 className='font-mulish  md:text-[36px] text-[20px]  text-center text-white pb-5'>How to choose the right car insurance policy online?</h1>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-20">
 
             <div className='flex gap-3 rounded-xl border border-blue-500 p-4 md:p-10 items-start'>
                <Image src={one} alt="one" className='pt-2'/>
