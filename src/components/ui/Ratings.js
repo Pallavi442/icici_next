@@ -140,7 +140,7 @@ const Ratings = () => {
           {Array.from({ length: Math.ceil(reviews.length / itemsPerView) }).map((_, i) => (
             <span
               key={i}
-              className={`h-2 w-2 rounded-full ${i * itemsPerView === currentIndex ? 'bg-orange-500' : 'bg-gray-300'}`}
+              className={`h-2 w-2 rounded-full ${i * itemsPerView === currentIndex ? 'bg-orange-500 px-2' : 'bg-gray-300'}`}
             />
           ))}
         </div>
