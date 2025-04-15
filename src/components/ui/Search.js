@@ -14,15 +14,15 @@ const tags = [
 function Search() {
     return (
       <div className="bg-[#F8F6F6]">
-        <div className="py-8 px-5  max-w-[1440px] mx-auto overflow-hidden">
-          <div className="flex justify-center flex-col md:flex-row gap-8 items-start">
-            <div className="flex-shrink-0">
+        <div className="py-14 px-5  max-w-[1440px] mx-auto overflow-hidden">
+          <div className="flex justify-center flex-col lg:flex-row gap-24 items-start">
+            <div className="flex-shrink-0 mx-auto md:mt-auto ">
              <Image src={search} alt="search"/>
             </div>
             <div className="flex flex-col">
-              <h2 className="font-mulish text-[36px] font-semibold mb-4">Popular Searches</h2>
+              <h2 className="font-mulish text-[36px] font-semibold mb-4 text-center lg:text-start">Popular Searches</h2>
               {/* className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3" */}
-              <div className="flex flex-wrap gap-3" style={{marginInline: '2rem', marginBottom : "2rem"}}>
+              <div className="flex flex-wrap gap-3.5">
                 {tags.map((tag, index) => (
                   <span key={index}
                     className="bg-white font-mulish text-[12px] px-3 py-1 rounded-full whitespace-nowrap hover:bg-[#FFF2EB] transition"

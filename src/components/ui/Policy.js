@@ -9,14 +9,17 @@ import six from '../../../public/images/six.svg';
 
 function Policy() {
   return (
-    <div className='bg-blue-900 px-5 md:px-10 py-0 md:py-10'>
+
+    <div className=' bg-[#065E9E]'>
+
+    <div className='max-w-[1440px] mx-auto overflow-hidden px-6 py-0 md:py-14'>
       <div className='pb-2.5'>
-        <h1 className='font-mulish text-2xl md:text-4xl text-center text-white pb-5'>
+        <h1 className='font-mulish text-2xl md:text-4xl text-center text-white py-5'>
           How to choose the right car insurance policy online?
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[1440px] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 max-w-[1440px] mx-auto">
         {[ 
           {
             img: one,
@@ -49,7 +52,7 @@ function Policy() {
             text: 'Look for discounts you might be eligible for, such as discounts for having multiple policies, being a safe driver, or driving less.',
           }
         ].map((item, index) => (
-          <div key={index} className='flex gap-3 rounded-xl border border-blue-500 p-4 md:p-10 items-start'>
+          <div key={index} className=' flex  items-start gap-3 rounded-xl border border-blue-500 p-4 md:p-10 h-full xl:h-[280px]'>
             <Image src={item.img} alt={`icon-${index}`} className='pt-2' />
             <div className='flex flex-col'>
               <span className='font-mulish text-base md:text-lg text-white font-bold'>{item.title}</span>
@@ -59,11 +62,12 @@ function Policy() {
         ))}
       </div>
 
-      <div className='mt-8 max-w-[1440px] mx-auto'>
+      <div className='my-8 max-w-[1440px] mx-auto'>
         <span className='font-mulish text-sm md:text-base text-white'>
           Before buying car insurance online, read the policy details and fine print, and ask questions to clarify anything you need help understanding. Regularly reviewing your car insurance policy can help ensure that it continues to meet your needs and that you’re not overpaying for coverage you don’t need.
         </span>
       </div>
+    </div>
     </div>
   );
 }

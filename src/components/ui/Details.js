@@ -4,7 +4,7 @@ import Car1 from '../../../public/images/Car1.png';
 
 function Details() {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start px-5 sm:px-6 lg:px-10 py-8 gap-6 max-w-[1440px] mx-auto overflow-hidden">
+    <div className="flex flex-col lg:flex-row items-center px-5 sm:px-6 py-8 gap-6 max-w-[1440px] mx-auto overflow-hidden">
       
       <div className="w-full md:w-2/5 flex justify-center md:justify-start">
         <Image src={Car1} alt="car" className="w-full max-w-[400px] h-auto" />

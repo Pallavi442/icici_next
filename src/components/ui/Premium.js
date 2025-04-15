@@ -7,12 +7,12 @@ import arrowLeft from '../../../public/images/arrowLeft.svg';
 
 function Premium() {
   return (
-    <div className="px-4 sm:px-6 lg:px-10">
-      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-semibold text-center py-4">
+    <div className="px-5 sm:px-6 max-w-[1440px] mx-auto overflow-hidden py-14">
+      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-semibold text-center pb-8">
         How is car insurance premium calculated?
       </h1>
 
-      <div className="w-full flex flex-col justify-center items-start gap-8 lg:flex-row lg:items-start">
+      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start">
 
         <div className="w-full lg:w-1/2">
           <span className="block mb-4 text-lg font-semibold">
@@ -28,8 +28,8 @@ function Premium() {
           </div>
 
 
-          <div className="overflow-x-auto rounded-2xl bg-white shadow-md w-full mb-6">
-            <table className="min-w-[500px] table-auto text-left border-separate border-spacing-0">
+          <div className="overflow-x-auto rounded-2xl bg-white shadow-md w-full mb-6 max-w-[550px] ml-7">
+            <table className=" table-auto text-left border-separate border-spacing-0">
               <thead>
                 <tr className="bg-[rgba(225,224,209,1)] text-black">
                   <th className="px-4 py-3 border-r border-gray-300 w-1/2">Cubic capacity</th>

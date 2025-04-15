@@ -20,8 +20,10 @@ const Include = () => {
     const [activeLink, setActiveLink] = useState("/Inclusions")
 
     return (
-        <div className='py-4 sm:p-6 lg:p-10 max-w-[1440px] mx-auto overflow-hidden'>
-            <div className='text-center'>
+        <div className='bg-white'>
+
+        <div className='sm:p-6 max-w-[1440px] mx-auto overflow-hidden px-5'>
+            <div className='text-center py-8'>
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
@@ -47,7 +49,7 @@ const Include = () => {
             </ul>
 
             {activeLink === "/Inclusions" && (
-                <div className='pb-5'>
+                <div className='pb-10'>
                     <span className='font-semibold'>What’s included:</span>
                     <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                         <div className='sm:w-3/4 md:w-1/2'>
@@ -110,7 +112,7 @@ const Include = () => {
              </div>
             )}
             <hr className="border-b-2 border-[#C9C9C9]" />
-            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 pt-5">
+            <div className="flex flex-col items-start lg:flex-row lg:items-center lg:flex-wrap text-start gap-2 lg:gap-4 pt-10">
                 <span className="font-medium">Policy documents:</span>
 
                 <a href="#" className="text-[rgb(236_102_8/1)] underline underline-offset-1">
@@ -128,7 +130,7 @@ const Include = () => {
                 </a>
             </div>
 
-
+            </div>
         </div>
     )
 }

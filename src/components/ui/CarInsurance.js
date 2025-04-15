@@ -8,7 +8,7 @@ import New from '../../../public/images/New.png';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex flex-wrap w-full py-10 max-w-[1440px] mx-auto overflow-hidden px-5">
+        <div className="flex flex-wrap justify-center gap-y-8 w-full py-10 max-w-[1440px] mx-auto overflow-hidden px-5">
             
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">
 
@@ -53,7 +53,7 @@ function CarInsurance() {
                 </div>
             </div>
 
-            <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-16">
+            <div className=" flex justify-center items-center w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-16">
                 <Image src={car} alt="car" draggable={false} />
             </div>
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-6 lg:pt-0">

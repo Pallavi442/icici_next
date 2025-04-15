@@ -3,21 +3,21 @@ import React, { useState } from 'react';
 import arrowLeft from '../../../public/images/arrowLeft.svg';
 import Image from 'next/image';
 
-function Quations() {
+function Questions() {
     const [isActive, setIsActive] = useState('/General');
     return (
         <div className='bg-[#F8F6F6]'>
-        <div className='flex flex-col  pt-5 pb-10 px-4 md:px-10 lg:px-20 max-w-[1440px] mx-auto overflow-hidden'>
-            <h1 className='font-mulish text-3xl md:text-xl lg:text-4xl font-semibold text-center mb-6'>
+        <div className='flex flex-col py-14 px-5 md:px-10 lg:px-20 max-w-[1440px] mx-auto overflow-hidden gap-5'>
+            <h1 className='font-mulish text-3xl md:text-2xl lg:text-4xl font-semibold text-center mb-4'>
                 Get answers to common questions about car insurance policy
             </h1>
-            <div className='flex flex-col w-full md:w-4/5 lg:w-3/5 mx-auto text-center'>
-                <ul className='flex flex-wrap justify-center gap-4 pb-5'>
+            <div className='flex flex-col w-full md:w-4/5 lg:w-3/5 mx-auto text-center gap-4'>
+                <ul className='flex flex-wrap gap-8 border-b-2 border-[#C9C9C9] '>
                     {["General", "Cover", "Premium", "Cliams", "Policy"].map((item, index) => (
                         <li
                             key={index}
-                            className={`flex gap-2 items-center cursor-pointer ${
-                                isActive === `/${item}` ? 'text-orange-400' : 'text-gray-500'
+                            className={`flex gap-2 items-center cursor-pointer py-2 ${
+                                isActive === `/${item}` ? 'text-orange-400 border-b-2 border-[#EC6625]' : 'text-gray-500'
                             }`}
                             onClick={() => setIsActive(`/${item}`)}
                         >
@@ -25,7 +25,7 @@ function Quations() {
                         </li>
                     ))}
                 </ul>
-                <hr className="border-gray-300 mb-4" />
+                {/* <hr className="border-gray-300 mb-4" /> */}
 
                 {isActive === '/General' && (
                     <div className='flex flex-col gap-6 text-left'>
@@ -86,4 +86,4 @@ function Quations() {
     );
 }
 
-export default Quations;
+export default Questions;

@@ -6,7 +6,7 @@ import Include from "@/components/ui/Include";
 import Policy from "@/components/ui/Policy";
 import Premium from "@/components/ui/Premium";
 import Product from "@/components/ui/Product";
-import Quations from "@/components/ui/Quations";
+import Questions from "@/components/ui/Questions";
 import Ratings from "@/components/ui/Ratings";
 import Review from "@/components/ui/Review";
 import Search from "@/components/ui/Search";
@@ -25,10 +25,10 @@ export default function Home() {
         <Include />
         <Buy />
         <Premium />
-        <Quations />
-        <CarModel />
+        <Questions />
         <Ratings />
         <Search />
+        <CarModel />
         <Product />
     </div>
   );

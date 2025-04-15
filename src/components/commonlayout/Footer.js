@@ -31,14 +31,14 @@ function Footer() {
             </div>
 
   <div className='bg-[#ECE9E9] '>
-            <div className='flex flex-col lg:flex-row py-5 px-5 gap-6 max-w-[1440px] mx-auto overflow-hidden'>
-                <div className='flex lg:w-2/5 w-full flex-col gap-2'>
+            <div className='flex flex-col lg:flex-row py-12 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
+                <div className='flex lg:w-1/3 w-full flex-col gap-4'>
                     <Image src={footerLogo} alt="footer" />
                     <span className='font-mulish text-sm font-semibold'>
                         ICICI Lombard General Insurance Company Limited,
                     </span>
                     <span className='font-mulish text-xs'>
-                        ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhi Vinayak Temple, Prabhadevi, Mumbai - 400025.
+                        ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhi <br/> Vinayak Temple, Prabhadevi, Mumbai - 400025.
                     </span>
                     <span className='font-mulish text-xs'>
                         Email: customersupport@icicilombard.com Fax no - 022 61961323
@@ -51,7 +51,7 @@ function Footer() {
                         <Image src={youtube} alt="youtube" />
                     </div>
                 </div>
-                <div className='flex lg:w-3/5 w-full flex-col gap-2'>
+                <div className='flex lg:w-2/3 w-full flex-col gap-4'>
                     <span className='font-mulish text-xs'>
                         ICICI Lombard General Insurance Ltd. is one of the largest private sector general insurance company in India offering insurance coverage for motor, health, travel, home, student travel and more. Policies can be purchased and renewed online as well. Immediate issuance of policy copy online.
                     </span>
