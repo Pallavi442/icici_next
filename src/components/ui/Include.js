@@ -27,9 +27,9 @@ const Include = () => {
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
-            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-10'>
+            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-12'>
                 <li
-                    className={`cursor-pointer py-3 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Inclusions"
+                    className={`cursor-pointer py-4 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Inclusions"
                         ? "text-[#EC6625] border-b-2 border-[#EC6625]"
                         : "text-[#838383]"
                         }`}
@@ -38,7 +38,7 @@ const Include = () => {
                     Inclusions
                 </li>
                 <li
-                    className={`cursor-pointer py-3 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Exclusions"
+                    className={`cursor-pointer py-4 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Exclusions"
                         ? "text-[#EC6625] border-b-2 border-[#EC6625]"
                         : "text-[#838383]"
                         }`}
@@ -49,9 +49,9 @@ const Include = () => {
             </ul>
 
             {activeLink === "/Inclusions" && (
-                <div className='py-10'>
+                <div className='pb-12'>
                     <span className='font-semibold'>What’s included:</span>
-                    <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
+                    <div className=' flex w-fill py-4 flex-col gap-4 md:flex-row'>
                         <div className='sm:w-3/4 md:w-1/2'>
                             <ul className='flex gap-6 flex-col'>
                                 {list.map((item, index, arr) => (
@@ -81,7 +81,7 @@ const Include = () => {
             )}
 
             {activeLink === "/Exclusions" && (
-                 <div className='py-10'>
+                 <div className='pb-14'>
                  <span className='font-semibold'>What’s excluded:</span>
                  <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                      <div className='sm:w-3/4 md:w-1/2'>

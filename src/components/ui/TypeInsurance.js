@@ -64,10 +64,10 @@ function TypeInsurance() {
             </div>
             <div className="flex flex-col gap-4 mt-8 text-justify w-[80%] pt-2">
                 <p className="font-mulish text-base">
-                    Comprehensive car insurance is a more complete policy that covers not only third-party liabilities but also damage to your own vehicle. On the other hand, third-party car insurance only covers legal liabilities in case of an accident.
+                Comprehensive car insurance is a more comprehensive policy that covers not only third-party liabilities but also damage to your own vehicle. On the other hand, third-party car insurance only covers legal liabilities in case of an accident. Comprehensive car insurance also offers add-ons like zero depreciation and roadside assistance, whereas third-party insurance only includes mandatory coverage as per law.
                 </p>
                 <p className="font-mulish text-base">
-                    Comprehensive car insurance also offers add-ons like zero depreciation and roadside assistance, whereas third-party insurance only includes mandatory coverage as per law. Though comprehensive insurance has a higher premium, it provides broader protection. The choice depends on your budget and the level of protection you seek.
+                Comprehensive car insurance has a higher premium as compared to third-party insurance, but it provides complete protection for your car. The choice between the two depends on your budget and the level of coverage you desire. You can easily buy car insurance online or offline, but third-party insurance is mandatory and needs to be purchased before registering a car.
                 </p>
             </div>
         </div>
