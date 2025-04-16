@@ -49,7 +49,7 @@ const Include = () => {
             </ul>
 
             {activeLink === "/Inclusions" && (
-                <div className='p-10'>
+                <div className='py-10'>
                     <span className='font-semibold'>What’s included:</span>
                     <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                         <div className='sm:w-3/4 md:w-1/2'>
@@ -81,7 +81,7 @@ const Include = () => {
             )}
 
             {activeLink === "/Exclusions" && (
-                 <div className='p-10'>
+                 <div className='py-10'>
                  <span className='font-semibold'>What’s excluded:</span>
                  <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                      <div className='sm:w-3/4 md:w-1/2'>
