@@ -65,7 +65,7 @@ const Include = () => {
                             </ul>
                         </div>
                         <div className='sm:w-3/4 md:w-1/2'>
-                            <ul className='flex gap-4 flex-col'>
+                            <ul className='flex gap-6 flex-col'>
                                 {list2.map((item, index, arr) => (
                                     <li key={index} className="flex gap-2 items-center">
 
