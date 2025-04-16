@@ -12,7 +12,7 @@ function Premium() {
         How is car insurance premium calculated?
       </h1>
 
-      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start">
+      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start pt-6">
 
         <div className="w-full lg:w-1/2">
           <span className="block mb-4 text-lg font-semibold">

@@ -28,7 +28,7 @@ function Questions() {
                 {/* <hr className="border-gray-300 mb-4" /> */}
 
                 {isActive === '/General' && (
-                    <div className='flex flex-col gap-6 text-left'>
+                    <div className='flex flex-col gap-6 space-y-3 text-left mt-8'>
                         <div className='flex flex-col text-justify'>
                             <span className='font-mulish text-base font-semibold'>Why do I need to insure my car?</span>
                             <span className='font-mulish text-base'>In India, third-party car insurance is compulsory for all car owners. Moreover, own-damage car insurance covers you in case of accidents, theft and fire. In case of any untoward incident, you dont have to pay out of pocket for repairs or replacement if you have a valid insurance policy.</span>
