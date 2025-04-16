@@ -2,7 +2,7 @@ import React from 'react';
 
 function Product() {
   return (
-    <div className="px-5 sm:px-6 lg:px-20 py-6 sm:py-8 lg:py-10  max-w-[1440px] mx-auto overflow-hidden">
+    <div className="px-5 sm:px-6 lg:px-20 py-6 sm:py-8 lg:py-10  max-w-[1440px] xl:h-[338px]  mx-auto overflow-hidden">
       <div className="w-full overflow-x-auto rounded-2xl shadow">
         <table className="min-w-full table-auto text-left border-separate border-spacing-0">
           <thead>

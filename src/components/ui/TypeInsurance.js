@@ -2,11 +2,11 @@ import React from 'react';
 
 function TypeInsurance() {
     return (
-        <div className="flex flex-col items-center  md:px-24 lg:px-48 py-14 px-5 sm:px-0 max-w-[1440px] mx-auto overflow-hidden">
+        <div className="flex flex-col items-center  md:px-24 lg:px-48 py-14 px-5 sm:px-0 max-w-[1440px] mx-auto overflow-hidden xl:h-[820px]">
             <h1 className="font-mulish text-3xl md:text-4xl text-center mb-8 font-semibold">
                 Comprehensive car insurance vs Third party car insurance
             </h1>
-            <div className="md:w-[70%] overflow-hidden rounded-2xl">
+            <div className="md:w-[80%] overflow-hidden rounded-2xl">
                 <table className="w-full table-auto text-left border-separate border-spacing-0">
                     <thead>
                         <tr className="bg-[rgba(225,224,209,1)] text-black">
@@ -62,11 +62,11 @@ function TypeInsurance() {
                     </tbody>
                 </table>
             </div>
-            <div className="flex flex-col gap-4 mt-8 text-justify">
-                <p className="font-mulish text-[16px]">
+            <div className="flex flex-col gap-4 mt-8 text-justify w-[80%] pt-2">
+                <p className="font-mulish text-base">
                     Comprehensive car insurance is a more complete policy that covers not only third-party liabilities but also damage to your own vehicle. On the other hand, third-party car insurance only covers legal liabilities in case of an accident.
                 </p>
-                <p className="font-mulish text-[16px]">
+                <p className="font-mulish text-base">
                     Comprehensive car insurance also offers add-ons like zero depreciation and roadside assistance, whereas third-party insurance only includes mandatory coverage as per law. Though comprehensive insurance has a higher premium, it provides broader protection. The choice depends on your budget and the level of protection you seek.
                 </p>
             </div>

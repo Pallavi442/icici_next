@@ -10,16 +10,16 @@ import six from '../../../public/images/six.svg';
 function Policy() {
   return (
 
-    <div className=' bg-[#065E9E]'>
+    <div className=' bg-[#00305B] xl:h-[883px]'>
 
-    <div className='max-w-[1440px] mx-auto overflow-hidden px-6 py-0 md:py-14'>
-      <div className='pb-2.5'>
-        <h1 className='font-mulish text-2xl md:text-4xl text-center text-white py-5'>
+    <div className='max-w-[1440px] mx-auto overflow-hidden px-6 py-0 md:py-8 lg:h[884px] h-auto'>
+      <div className='pb-5'>
+        <h1 className='font-mulish text-2xl md:text-4xl text-center text-white py-5 font-semibold'>
           How to choose the right car insurance policy online?
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 max-w-[1440px] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 max-w-[1440px] mx-auto">
         {[ 
           {
             img: one,
@@ -52,7 +52,7 @@ function Policy() {
             text: 'Look for discounts you might be eligible for, such as discounts for having multiple policies, being a safe driver, or driving less.',
           }
         ].map((item, index) => (
-          <div key={index} className=' flex  items-start gap-3 rounded-xl border border-blue-500 p-4 md:p-10 h-full xl:h-[280px]'>
+          <div key={index} className=' flex  items-start gap-3 rounded-xl border border-blue-500 p-4 md:p-8 h-full xl:h-[250px]'>
             <Image src={item.img} alt={`icon-${index}`} className='pt-2' />
             <div className='flex flex-col'>
               <span className='font-mulish text-base md:text-lg text-white font-bold'>{item.title}</span>

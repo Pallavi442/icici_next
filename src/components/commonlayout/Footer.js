@@ -11,8 +11,8 @@ import twitter from '../../../public/images/twitter.svg';
 function Footer() {
     return (
         <div>
-            <hr className="border-gray-400 " />
-            <div className="py-5 px-5 flex flex-wrap items-center justify-between gap-y-2 max-w-[1440px] mx-auto overflow-hidden">
+            <hr className="border-gray-400"/>
+            <div className="py-3 px-5 flex flex-wrap items-center justify-between gap-y-2 max-w-[1440px] mx-auto overflow-hidden">
                 <ul className="flex flex-wrap gap-2 items-center">
                     {["Home", "Motor Insurance", "Car Insurance"].map((item, index, arr) => (
                         <li key={index} className="flex items-center gap-2 text-xs sm:text-base">
@@ -30,8 +30,8 @@ function Footer() {
                 </a>
             </div>
 
-  <div className='bg-[#ECE9E9] '>
-            <div className='flex flex-col lg:flex-row py-12 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
+  <div className='bg-[#ECE9E9] xl:h-[345px]'>
+            <div className='flex flex-col lg:flex-row py-8 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
                 <div className='flex lg:w-1/3 w-full flex-col gap-4'>
                     <Image src={footerLogo} alt="footer" />
                     <span className='font-mulish text-sm font-semibold'>

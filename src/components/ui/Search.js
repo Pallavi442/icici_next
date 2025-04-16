@@ -13,8 +13,8 @@ const tags = [
 
 function Search() {
     return (
-      <div className="bg-[#F8F6F6]">
-        <div className="py-14 px-5  max-w-[1440px] mx-auto overflow-hidden">
+      <div className="bg-[#F8F6F6] xl:h-[381px]">
+        <div className="py-[64px] px-5  max-w-[1440px] mx-auto overflow-hidden">
           <div className="flex justify-center flex-col lg:flex-row gap-24 items-start">
             <div className="flex-shrink-0 mx-auto md:mt-auto ">
              <Image src={search} alt="search"/>

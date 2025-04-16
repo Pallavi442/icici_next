@@ -15,25 +15,25 @@ const reviews = [
     name: 'Kumar Ambuj',
     ratingImg: star1,
     description:
-      'The interaction was good. The customer service associate gave me answers to all my queries...',
+      'The interaction was good. The customer service associate gave me answers to all my queries. Her presence while making the decision to buy was helpful. I will definitely recommend ICICI Lombard to my friends and family for the way they treat customers.',
   },
   {
-    name: 'Sanjay Achliya',
+    name: 'Sanjay Achliya ',
     ratingImg: star2,
     description:
-      "Very good experience. The executive gave me all the information clearly and didn't mind repeating...",
+      "Very good experience. The agent gave me all the information clearly and didn't mind repeating certain points until I understood. I don't fully get technology, but she offered to take care of the whole process of buying the car insurance policy without any hassle. I am truly thankful.",
   },
   {
     name: 'Priya Sharma',
     ratingImg: star1,
     description:
-      'Quick and seamless experience. The team guided me perfectly...',
+      'The interaction was good. The customer service associate gave me answers to all my queries. Her presence while making the decision to buy was helpful. I will definitely recommend ICICI Lombard to my friends and family for the way they treat customers.',
   },
   {
     name: 'Raj Verma',
     ratingImg: star2,
     description:
-      'Very professional service. I’m impressed by the way the process was handled...',
+      'The interaction was good. The customer service associate gave me answers to all my queries. Her presence while making the decision to buy was helpful. I will definitely recommend ICICI Lombard to my friends and family for the way they treat customers.',
   },
 ];
 
@@ -63,12 +63,12 @@ const Ratings = () => {
   };
 
   return (
-    <div className="px-4 md:px-12 py-5 text-center">
+    <div className="px-4 md:px-12 py-10 text-center xl:h-[681px]">
       <h2 className="text-3xl md:text-4xl font-semibold mb-4 pt-6">Ratings and reviews</h2>
 
       <div className="flex justify-center items-center mb-10 pt-5">
         <div className="flex items-center space-x-4 pr-6">
-          <h4 className="text-lg font-semibold border-r border-slate-400 pr-5">4.6 ⭐</h4>
+          <h4 className="text-4xl font-semibold border-r border-slate-400 pr-5">4.6 ⭐</h4>
           <div className="text-left pl-5">
             <p className="text-sm text-black">Our customers have rated us<br />
               <span className='text-slate-400'>Based on 456 reviews</span></p>

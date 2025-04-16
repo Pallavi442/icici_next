@@ -15,7 +15,7 @@ import TypesOfPolicies from "@/components/ui/TypesOfPolicies";
 
 export default function Home() {
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[104px]">
         <CarInsurance />
         <Review />
         <Details />

@@ -9,12 +9,12 @@ import buy4 from '../../../public/images/buy4.svg';
 
 function Buy() {
     return (
-        <div className='bg-[rgba(248,246,246,1)] '>
-        <div className="pb-10 max-w-[1440px] mx-auto overflow-hidden">
-            <div className='px-5 py-8 md:py-20'>
+        <div className='bg-[rgba(248,246,246,1)] xl:h-[630px]'>
+        <div className="pb-8 max-w-[1440px] mx-auto overflow-hidden">
+            <div className='px-5 py-6 md:py-18'>
                 <h1 className='font-mulish font-semibold  md:text-4xl text-2xl  text-center'>Things to keep in mind while buying a car insurance policy</h1>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 sm:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 sm:px-6">
       
 
                 <div className='flex px-10 gap-4 bg-white p-4 md:p-10 rounded-2xl items-start'>

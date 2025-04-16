@@ -12,23 +12,23 @@ const swipperArr = [
   {
     title: 'Comprehensive car insurance policy',
     description1:
-      'Comprehensive car insurance provides complete coverage for your vehicle, including natural disasters, theft, and third-party liabilities.',
+      'Comprehensive car insurance, also known as a private car package policy, is a type of auto insurance that provides complete coverage for your vehicle. It is an optional car insurance policy but is highly recommended for car owners who want the best protection for their four-wheelers.',
     description2:
-      'It may include benefits like roadside assistance and towing. Though more expensive, it offers broader coverage than other types.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
   },
   {
-    title: 'Third-party car insurance policy',
+    title: 'Comprehensive car insurance policy-2',
     description1:
-      'Third-party car insurance is mandatory by law and covers legal liabilities towards others in case of an accident.',
+      'Comprehensive car insurance, also known as a private car package policy, is a type of auto insurance that provides complete coverage for your vehicle. It is an optional car insurance policy but is highly recommended for car owners who want the best protection for their four-wheelers.',
     description2:
-      'It covers injuries or damage to third-party vehicles/property but doesn’t cover your own car’s damage.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
   },
   {
-    title: 'Standalone own damage car insurance policy',
+    title: 'Comprehensive car insurance policy-3',
     description1:
-      'This policy covers damage to your own car due to accidents, fire, or natural disasters but not third-party damages.',
+      'Comprehensive car insurance, also known as a private car package policy, is a type of auto insurance that provides complete coverage for your vehicle. It is an optional car insurance policy but is highly recommended for car owners who want the best protection for their four-wheelers.',
     description2:
-      'It’s often combined with third-party policies for full protection.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
   },
 ];
 
@@ -44,7 +44,7 @@ function TypesOfPolicies() {
   };
 
   return (
-    <div className="bg-[rgba(255,242,235,1)] px-5 sm:px-6 py-10 w-full">
+    <div className="bg-[rgba(255,242,235,1)] px-5 sm:px-6 py-10 w-full xl:h-[565px]">
       <h1 className="font-mulish text-[24px] sm:text-[30px] lg:text-[36px] text-center font-semibold mb-6">
         What are the different types of car insurance policies?
       </h1>
@@ -56,7 +56,7 @@ function TypesOfPolicies() {
           <FontAwesomeIcon icon={faArrowLeft} className="text-2xl" />
         </button>
 
-        <div className="flex flex-col sm:flex-row items-center bg-white sm:p-8 rounded-2xl mx-4 w-full gap-10">
+        <div className="flex flex-col sm:flex-row items-center bg-white sm:px-8 sm:py-10 rounded-2xl mx-4 w-full gap-10">
           <div className="flex-shrink-0">
             <Image src={swipperImg} alt="swipper img" width={150} height={150} />
           </div>

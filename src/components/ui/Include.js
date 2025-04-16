@@ -20,14 +20,14 @@ const Include = () => {
     const [activeLink, setActiveLink] = useState("/Inclusions")
 
     return (
-        <div className='bg-white'>
+        <div className='bg-[#F8F6F6] xl:h-[607px]'>
 
         <div className='sm:p-6 max-w-[1440px] mx-auto overflow-hidden px-5'>
             <div className='text-center py-8'>
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
-            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-6'>
+            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-10'>
                 <li
                     className={`cursor-pointer py-3 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Inclusions"
                         ? "text-[#EC6625] border-b-2 border-[#EC6625]"
@@ -49,11 +49,11 @@ const Include = () => {
             </ul>
 
             {activeLink === "/Inclusions" && (
-                <div className='pb-10'>
+                <div className='p-10'>
                     <span className='font-semibold'>What’s included:</span>
                     <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                         <div className='sm:w-3/4 md:w-1/2'>
-                            <ul className='flex gap-4 flex-col'>
+                            <ul className='flex gap-6 flex-col'>
                                 {list.map((item, index, arr) => (
                                     <li key={index} className="flex gap-2 items-center">
 
@@ -81,11 +81,11 @@ const Include = () => {
             )}
 
             {activeLink === "/Exclusions" && (
-                 <div className='pb-5'>
+                 <div className='p-10'>
                  <span className='font-semibold'>What’s excluded:</span>
                  <div className=' flex w-fill py-2 flex-col gap-4 md:flex-row'>
                      <div className='sm:w-3/4 md:w-1/2'>
-                         <ul className='flex gap-4 flex-col'>
+                         <ul className='flex gap-6 flex-col'>
                              {list.map((item, index, arr) => (
                                  <li key={index} className="flex gap-2 items-center">
 

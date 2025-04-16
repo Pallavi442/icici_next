@@ -23,8 +23,8 @@ function NavbarBottom() {
   };
 
   return (
-    < div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)]'>
-      <div className='text-white py-2 max-w-[1440px] mx-auto px-5'>
+    < div className='bg-gradient-to-b from-[rgba(241,125,1,1)] to-[rgba(174,33,32,1)]  xl:h-[60px]'>
+      <div className='text-white py-3 max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-6'>
             <Image src={logo} width={150} height={150} alt='logo' />

@@ -8,15 +8,16 @@ import New from '../../../public/images/New.png';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex flex-wrap justify-center gap-y-8 w-full py-10 max-w-[1440px] mx-auto overflow-hidden px-5">
+        <div className="flex flex-wrap justify-center gap-y-8 w-full py-[4.40rem] xl:h-[604px] max-w-[1440px] mx-auto overflow-hidden px-5 gap-x-7 ">
+
             
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">
 
                 <div className='flex flex-col gap-5'>
                     <div>
                    
-                        <p className='font-mulish font-black text-4xl mt-2'>Car Insurance</p>
-                        <p className='font-mulish font-semibold text-2xl mt-2'>Prices starting at just ₹2,094/yr</p>
+                        <p className='font-mulish font-bold text-5xl mt-2'>Car insurance</p>
+                        <p className='font-mulish font-semibold text-3xl mt-2'>Prices starting at just ₹2,094/yr</p>
                         <p className='font-mulish font-normal text-xs mt-2'>This amount refers to the TP rates only</p>
         
                        
@@ -53,8 +54,10 @@ function CarInsurance() {
                 </div>
             </div>
 
-            <div className=" flex justify-center items-center w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-16">
-                <Image src={car} alt="car" draggable={false} />
+            <div className=" flex justify-center items-center w-full xl:w-1/3 md:w-1/1 lg:w-1/2  lg:-ml-16">
+
+                <Image src={car} alt="car" draggable={false} className='lg:-ml-[6rem]'/>
+
             </div>
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2 pt-6 lg:pt-0">
                 <InsuranceForm />
