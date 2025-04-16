@@ -30,7 +30,7 @@ function NavbarTop() {
           <span>Live Chat</span>
         </div>
       </div>
-      <div className="md:flex hidden ">
+      <div className="lg:flex hidden ">
       <ul className="flex flex-wrap space-x-2 text-xs mt-2 sm:text-base sm:mt-0 lg:space-x-6 items-center">
           {["Renewals", "Support", "Info Center", "Investor Relations"].map((item) => (
             <li key={item} className="relative group">
