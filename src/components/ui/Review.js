@@ -7,7 +7,7 @@ import reviewImg3 from '../../../public/images/reviewImg3.svg';
 function Review() {
   return (
     <div className='bg-[#f8f6f6] xl:h-[300px]'>
-      <div className='max-w-[1440px] mx-auto overflow-hidden py-9 px-5 w-full'>
+      <div className='max-w-[1440px] mx-auto overflow-hidden  py-4 md:py-9 px-5 w-full'>
         <div>
           <p className="font-mulish text-2xl sm:text-[28px] lg:text-[36px] font-semibold mb-4 text-center">
             Why our customers love us?

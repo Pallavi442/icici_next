@@ -15,7 +15,7 @@ function Premium() {
       <div className="w-full flex flex-col justify-center items-start gap-8 md:gap-16 lg:flex-row lg:items-start pt-4 md:pt-8">
 
         <div className="w-full lg:w-1/2">
-          <span className="block mb-4 text-lg font-semibold">
+          <span className="block md:mb-4 text-lg font-semibold">
             Your car insurance premium includes three major components
           </span>
 

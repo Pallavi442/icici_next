@@ -8,7 +8,7 @@ import New from '../../../public/images/New.svg';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex flex-wrap justify-center gap-y-8 w-full md:py-[4.40rem] xl:h-[604px] max-w-[1440px] mx-auto overflow-hidden px-5 gap-x-7 ">
+        <div className="flex flex-wrap justify-center gap-y-8 w-full  py-6 md:py-[4.40rem] xl:h-[604px] max-w-[1440px] mx-auto overflow-hidden px-5 gap-x-7 ">
 
             
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">
@@ -16,7 +16,7 @@ function CarInsurance() {
                 <div className='flex flex-col gap-5'>
                     <div>
                    
-                        <p className='font-mulish font-bold text-5xl mt-2'>Car insurance</p>
+                        <p className='font-mulish font-bold text-5xl md:mt-2'>Car insurance</p>
                         <p className='font-mulish font-semibold text-3xl mt-2'>Prices starting at just ₹2,094/yr</p>
                         <p className='font-mulish font-normal text-xs mt-2'>This amount refers to the TP rates only</p>
         

@@ -44,7 +44,7 @@ function TypesOfPolicies() {
   };
 
   return (
-    <div className="bg-[rgba(255,242,235,1)] px-5 sm:px-6 py-10 w-full xl:h-[565px]">
+    <div className="bg-[rgba(255,242,235,1)] px-5 sm:px-6  py-5 md:py-10 w-full xl:h-[565px]">
       <h1 className="font-mulish text-[24px] sm:text-[30px] lg:text-[36px] text-center font-semibold mb-6">
         What are the different types of car insurance policies?
       </h1>
