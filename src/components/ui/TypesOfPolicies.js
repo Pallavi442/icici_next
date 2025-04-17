@@ -49,7 +49,7 @@ function TypesOfPolicies() {
       <h1 className="font-mulish text-[24px] sm:text-[30px] lg:text-[36px] text-center font-semibold mb-6">
         What are the different types of car insurance policies?
       </h1>
-      <div className="hidden md:flex items-center justify-center w-full px-20">
+      <div className="hidden lg:flex items-center justify-center w-full px-20">
         <button
           onClick={handlePrev}
          className="p-5 rounded-full bg-white text-gray-800 shadow transition duration-200 hover:bg-orange-500 hover:text-white hover:scale-110 w-14 h-14 flex items-center justify-center"
@@ -80,7 +80,7 @@ function TypesOfPolicies() {
         </button>
       </div>
 
-      <div className="block md:hidden mt-6">
+      <div className="block lg:hidden mt-6">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={10}
