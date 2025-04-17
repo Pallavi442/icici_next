@@ -17,7 +17,7 @@ function Buy() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 sm:px-6">
       
 
-                <div className='flex px-10 gap-4 bg-white p-4 md:p-10 rounded-2xl items-start'>
+                <div className='flex px-10 gap-6 bg-white p-4 md:p-10 rounded-2xl items-start'>
                     <Image src={buy1} alt='buy1' className='mt-2' />
                     <div>
                         <span className='font-semibold text-xs md:text-base'>Policy coverage</span>
@@ -27,7 +27,7 @@ function Buy() {
                 </div>
 
 
-                <div className='flex px-10 gap-4  bg-white p-4 md:p-10 rounded-2xl items-start'>
+                <div className='flex px-10 gap-6  bg-white p-4 md:p-10 rounded-2xl items-start'>
                     <Image src={buy2} alt='buy2' className='mt-2'/>
                     <div>
                         <span className='font-semibold text-xs md:text-base'>Add-ons</span>
@@ -38,7 +38,7 @@ function Buy() {
 
 
 
-                <div className='flex px-10 gap-4  bg-white p-4 md:p-10 rounded-2xl items-start'>
+                <div className='flex px-10 gap-6  bg-white p-4 md:p-10 rounded-2xl items-start'>
                     <Image src={buy3} alt='buy3'className='mt-2' />
                     <div>
                     <span className='font-semibold text-xs md:text-base'>Service benefits</span>
@@ -47,7 +47,7 @@ function Buy() {
                     </div>
                 </div>
 
-                <div className='flex px-10 gap-4  bg-white p-4 md:p-10  rounded-2xl items-start'>
+                <div className='flex px-10 gap-6  bg-white p-4 md:p-10  rounded-2xl items-start'>
                     <Image src={buy4} alt='buy4' className='mt-2' />
                     <div>
                     <span className='font-semibold text-xs md:text-base'>Right Insured Declared Value (IDV)</span>
