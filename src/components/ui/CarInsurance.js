@@ -8,7 +8,7 @@ import New from '../../../public/images/New.svg';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (
-        <div className="flex flex-wrap justify-center gap-y-8 w-full py-[4.40rem] xl:h-[604px] max-w-[1440px] mx-auto overflow-hidden px-5 gap-x-7 ">
+        <div className="flex flex-wrap justify-center gap-y-8 w-full md:py-[4.40rem] xl:h-[604px] max-w-[1440px] mx-auto overflow-hidden px-5 gap-x-7 ">
 
             
             <div className="w-full xl:w-1/3 md:w-1/1 lg:w-1/2">

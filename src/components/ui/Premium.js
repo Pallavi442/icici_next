@@ -8,11 +8,11 @@ import arrowLeft from '../../../public/images/arrowLeft.svg';
 function Premium() {
   return (
     <div className="px-5 sm:px-6 max-w-[1440px] mx-auto overflow-hidden py-12 xl:h-[735px]">
-      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-medium text-center pb-8">
+      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-medium text-center pd-4 md:pb-8">
         How is car insurance premium calculated?
       </h1>
 
-      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start pt-8">
+      <div className="w-full flex flex-col justify-center items-start gap-8 md:gap-16 lg:flex-row lg:items-start pt-8">
 
         <div className="w-full lg:w-1/2">
           <span className="block mb-4 text-lg font-semibold">

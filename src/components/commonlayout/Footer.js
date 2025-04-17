@@ -31,8 +31,8 @@ function Footer() {
             </div>
 
             <div className='bg-[#ECE9E9] xl:h-[348px]'>
-            <div className='flex flex-col lg:flex-row pb-8 pt-10 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
-                <div className='flex lg:w-1/3 w-full flex-col gap-6'>
+            <div className='flex flex-col lg:flex-row pb-4 pt-5 md:pb-8 md:pt-10 px-5 md:gap-4  max-w-[1440px] mx-auto overflow-hidden'>
+                <div className='flex lg:w-1/3 w-full flex-col  gap-3 md:gap-6'>
                     <Image src={footerLogo} alt="footer" />
                     <span className='font-mulish text-sm'>
                         ICICI Lombard General Insurance Company Limited,
@@ -43,7 +43,7 @@ function Footer() {
                     <span className='font-mulish text-xs'>
                         Email: customersupport@icicilombard.com Fax no - 022 61961323
                     </span>
-                    <div className='flex gap-6 py-6'>
+                    <div className='flex  gap-3 py-3 md:gap-6 md:py-6'>
                         <Image src={facebook} alt="facebook" />
                         <Image src={linkedin} alt="linkedin" />
                         <Image src={twitter} alt="twitter" />
@@ -51,7 +51,7 @@ function Footer() {
                         <Image src={youtube} alt="youtube" />
                     </div>
                 </div>
-                <div className='flex lg:w-2/3 w-full flex-col gap-6 pt-8'>
+                <div className='flex lg:w-2/3 w-full flex-col  gap-3 pt-4 md:gap-6 md:pt-8'>
                     <span className='font-mulish text-xs'>
                         ICICI Lombard General Insurance Ltd. is one of the largest private sector general insurance company in India offering insurance coverage for motor, health, travel, home, student travel and more. Policies can be purchased and renewed online as well. Immediate issuance of policy copy online.
                     </span>

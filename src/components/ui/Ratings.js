@@ -71,12 +71,12 @@ const Ratings = () => {
   };
 
   return (
-    <div className="px-4 md:px-12 py-10 text-center xl:h-[681px]">
+    <div className="px-4 py-5 md:px-12 md:py-10 text-center xl:h-[681px]">
       <h2 className="text-3xl md:text-4xl font-semibold mb-4 pt-6">Ratings and reviews</h2>
 
       <div className="flex justify-center items-center mb-10 pt-5">
         <div className="flex items-center space-x-4 pr-6">
-          <h4 className="text-4xl font-semibold border-r border-slate-400 pr-5">4.6 ⭐</h4>
+          <h4 className=" text-2xl lg:text-4xl font-semibold border-r border-slate-400 pr-5">4.6 ⭐</h4>
           <div className="text-left pl-5">
             <p className="text-sm text-black">Our customers have rated us<br />
               <span className='text-slate-400'>Based on 456 reviews</span></p>
@@ -97,7 +97,7 @@ const Ratings = () => {
     {reviews.map((review, idx) => (
       <SwiperSlide key={idx}>
         <div className="text-left space-y-4 ">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-8 md:space-x-4">
             <p className="font-bold text-lg">{review.name}</p>
             <Image src={review.ratingImg} alt="stars" width={80} height={16} />
             <Image src={quote} alt="quote" width={50} height={50} />
@@ -145,7 +145,7 @@ const Ratings = () => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center pt-6">
+      <div className="flex flex-col items-center md:pt-6">
         <div className="flex space-x-2 gap-2 hidden md:flex">
           {Array.from({ length: Math.ceil(reviews.length / itemsPerView) }).map((_, i) => (
             <span
@@ -154,7 +154,7 @@ const Ratings = () => {
             />
           ))}
         </div>
-        <div className='pt-8'>
+        <div className='p-3 md:pt-8'>
         <button className="mt-4 px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-xs hover:bg-orange-500 hover:text-white transition">
           Read all reviews
         </button>

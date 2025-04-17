@@ -23,11 +23,11 @@ const Include = () => {
         <div className='bg-[#F8F6F6] xl:h-[607px]'>
 
         <div className='sm:p-6 max-w-[1440px] mx-auto overflow-hidden px-5'>
-            <div className='text-center py-8'>
+            <div className='text-center  py-6 md:py-8 '>
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
-            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-12'>
+            <ul className='border-b-2 border-[#C9C9C9] flex flex-wrap mb-6 md:mb-12'>
                 <li
                     className={`cursor-pointer py-4 px-4 sm:px-6 text-sm sm:text-base ${activeLink === "/Inclusions"
                         ? "text-[#EC6625] border-b-2 border-[#EC6625]"
@@ -49,7 +49,7 @@ const Include = () => {
             </ul>
 
             {activeLink === "/Inclusions" && (
-                <div className='pb-12'>
+                <div className=' pb-6 md:pb-12'>
                     <span className='font-semibold'>What’s included:</span>
                     <div className=' flex w-fill py-4 flex-col gap-4 md:flex-row'>
                         <div className='sm:w-3/4 md:w-1/2'>

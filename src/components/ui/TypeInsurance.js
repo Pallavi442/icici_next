@@ -62,7 +62,7 @@ function TypeInsurance() {
                     </tbody>
                 </table>
             </div>
-            <div className="flex flex-col gap-4 mt-8 text-justify w-[80%] pt-2">
+            <div className="flex flex-col gap-4 mt-8 text-justify md:w-[80%] pt-2">
                 <p className="font-mulish text-base">
                 Comprehensive car insurance is a more comprehensive policy that covers not only third-party liabilities but also damage to your own vehicle. On the other hand, third-party car insurance only covers legal liabilities in case of an accident. Comprehensive car insurance also offers add-ons like zero depreciation and roadside assistance, whereas third-party insurance only includes mandatory coverage as per law.
                 </p>
