@@ -12,7 +12,7 @@ function Questions() {
                 Get answers to common questions about car insurance policy
             </h1>
             <div className='flex flex-col w-full md:w-4/5 lg:w-3/5 mx-auto text-center gap-4'>
-                <ul className='flex flex-wrap gap-8 border-b-2 border-[#C9C9C9] '>
+                <ul className='flex flex-wrap gap-x-4 md:gap-8 border-b-2 border-[#C9C9C9]'>
                     {["General", "Cover", "Premium", "Cliams", "Policy"].map((item, index) => (
                         <li
                             key={index}

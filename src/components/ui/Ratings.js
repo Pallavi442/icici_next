@@ -40,15 +40,23 @@ const reviews = [
 const Ratings = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(2);
+  const [isMobile, setIsMobile] = useState(false);
+  console.log("isMobile",isMobile);
+  
 
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerView(window.innerWidth < 768 ? 1 : 2);
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      setItemsPerView(mobile ? 1 : 2);
     };
-    handleResize();
+  
+    handleResize(); 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+  
+  
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
@@ -77,30 +85,29 @@ const Ratings = () => {
       </div>
 
       <div className="md:hidden">
-        <Swiper
-          spaceBetween={10}
-          slidesPerView={1}
-          onSlideChange={() => setCurrentIndex((prev) => (prev + 1) % reviews.length)}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-        >
-          {reviews.map((review, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="text-left space-y-4">
-                <div className="flex items-center space-x-4">
-                  <p className="font-bold text-lg">{review.name}</p>
-                  <Image src={review.ratingImg} alt="stars" width={80} height={16} />
-                  <Image src={quote} alt="quote" width={50} height={50} />
-                </div>
-                <p className="text-gray-700 text-sm">{review.description}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      {isMobile && (
+  <Swiper
+    spaceBetween={10}
+    slidesPerView={1}
+    loop={true}
+    autoplay={{ delay: 3000, disableOnInteraction: false }}
+    modules={[Autoplay]}
+    onSlideChange={() => setCurrentIndex((prev) => (prev + 1) % reviews.length)}
+  >
+    {reviews.map((review, idx) => (
+      <SwiperSlide key={idx}>
+        <div className="text-left space-y-4 ">
+          <div className="flex items-center space-x-4">
+            <p className="font-bold text-lg">{review.name}</p>
+            <Image src={review.ratingImg} alt="stars" width={80} height={16} />
+            <Image src={quote} alt="quote" width={50} height={50} />
+          </div>
+          <p className="text-gray-700 text-sm">{review.description}</p>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+)}
       </div>
       <div className="hidden md:flex items-center justify-center gap-6 pt-5">
         <div className="hidden md:flex items-center justify-center gap-6 pt-5">
@@ -112,13 +119,16 @@ const Ratings = () => {
           </button>
         </div>
 
-        <div className="bg-white p-6 max-w-3xl w-full">
+        <div className="bg-white p-6 max-w-3xl w-full h-[234px]">
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8`}>
             {reviews.slice(currentIndex, currentIndex + 2).map((review, idx) => (
               <div key={idx} className="text-left space-y-4">
-                <div className="flex items-center space-x-4">
+                <div className="flex justify-between">
+                  <span className='flex items-center space-x-4'>
                   <p className="font-bold text-lg">{review.name}</p>
                   <Image src={review.ratingImg} alt="stars" width={80} height={16} />
+                  </span>
+  
                   <Image src={quote} alt="quote" width={50} height={50} />
                 </div>
                 <p className="text-gray-700 text-sm">{review.description}</p>

@@ -4,7 +4,7 @@ import React from 'react'
 function NavbarTop() {
   return (
     <div className='bg-[#f8f6f6] h-auto'>
-    <div className="w-full flex flex-wrap justify-between max-w-[1440px] mx-auto px-5 xl:h-[44px]">
+    <div className="w-full flex flex-wrap justify-between max-w-[1440px] mx-auto px-5 h-[44px]">
       <div className="flex flex-wrap space-x-3 text-sm md:text-base md:space-x-0 md:gap-6 items-center">
         <div className="flex gap-2 items-center">
           <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
