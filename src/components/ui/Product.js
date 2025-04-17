@@ -7,8 +7,8 @@ function Product() {
         <table className="min-w-full table-auto text-left border-separate border-spacing-0">
           <thead>
             <tr className="bg-[rgba(225,224,209,1)] text-black text-sm sm:text-base">
-              <th className="px-4 py-4 border-r border-gray-300 min-w-[150px]">Product</th>
-              <th className="px-4 py-4 min-w-[120px]">Product Code</th>
+              <th className="px-4 py-4 border-r border-white min-w-[150px]">Product</th>
+              <th className="px-4 py-4 min-w-[120px] border-r border-white">Product Code</th>
               <th className="px-4 py-4 min-w-[180px]">UIN Code</th>
             </tr>
           </thead>
