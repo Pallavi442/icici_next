@@ -1,10 +1,10 @@
-import car from '../../../public/images/Car.png';
-import img1 from '../../../public/images/cImg1.png';
-import Insurance1 from '../../../public/images/Insurance1.png';
-import Frame from '../../../public/images/Frame.png';
+import car from '../../../public/images/Car.svg';
+import img1 from '../../../public/images/cImg1.svg';
+import Insurance1 from '../../../public/images/Insurance1.svg';
+import Frame from '../../../public/images/Frame.svg';
 import Image from 'next/image'
 // import InsuranceForm from '../insuranceForm/';
-import New from '../../../public/images/New.png';
+import New from '../../../public/images/New.svg';
 import InsuranceForm from '../forms/InsuranceForm';
 function CarInsurance() {
     return (

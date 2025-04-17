@@ -7,12 +7,12 @@ import arrowLeft from '../../../public/images/arrowLeft.svg';
 
 function Premium() {
   return (
-    <div className="px-5 sm:px-6 max-w-[1440px] mx-auto overflow-hidden py-10 xl:h-[735px]">
-      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-semibold text-center pb-8">
+    <div className="px-5 sm:px-6 max-w-[1440px] mx-auto overflow-hidden py-12 xl:h-[735px]">
+      <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl font-medium text-center pb-8">
         How is car insurance premium calculated?
       </h1>
 
-      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start pt-6">
+      <div className="w-full flex flex-col justify-center items-start gap-16 lg:flex-row lg:items-start pt-8">
 
         <div className="w-full lg:w-1/2">
           <span className="block mb-4 text-lg font-semibold">
@@ -32,22 +32,22 @@ function Premium() {
             <table className="min-w-[500px] table-auto text-left border-separate border-spacing-0">
               <thead>
                 <tr className="bg-[#E1E0D1]">
-                  <th className="px-4 py-2 border-r border-gray-300 w-1/2 font-normal">Cubic capacity</th>
-                  <th className="px-4 py-2 w-1/2 font-normal">Premium with effect from 1st June 2022 (Rs.)</th>
+                  <th className="px-4 py-3 border-r border-gray-300 w-1/2 font-normal">Cubic capacity</th>
+                  <th className="px-4 py-3 w-1/2 font-normal">Premium with effect from 1st June 2022 (Rs.)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-4 py-2 border-r border-gray-300">Not exceeding 1000 cc</td>
-                  <td className="px-4 py-2">₹2,094</td>
+                  <td className="px-4 py-3 border-r border-gray-300">Not exceeding 1000 cc</td>
+                  <td className="px-4 py-3">₹2,094</td>
                 </tr>
                 <tr  className="bg-[#F5F6F6]">
-                  <td className="px-4 py-2 border-r border-gray-300">Exceeding 1000 cc but not exceeding 1500 cc</td>
-                  <td className="px-4 py-2">₹3,416</td>
+                  <td className="px-4 py-3 border-r border-gray-300">Exceeding 1000 cc but not exceeding 1500 cc</td>
+                  <td className="px-4 py-3">₹3,416</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-2 border-r border-gray-300">Exceeding 1500 cc</td>
-                  <td className="px-4 py-2">₹7,897</td>
+                  <td className="px-4 py-3 border-r border-gray-300">Exceeding 1500 cc</td>
+                  <td className="px-4 py-3">₹7,897</td>
                 </tr>
               </tbody>
             </table>
@@ -72,7 +72,7 @@ function Premium() {
 
 
         <div className="w-full lg:w-1/2">
-          <span className="font-mulish text-lg font-semibold block mb-3">
+          <span className="font-mulish text-lg font-medium block mb-3">
             Factors that affect these three components and your final car insurance price, include:
           </span>
 

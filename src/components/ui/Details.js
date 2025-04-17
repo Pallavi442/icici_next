@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Car1 from '../../../public/images/Car1.png';
+import Car1 from '../../../public/images/Car1.svg';
 
 function Details() {
   return (

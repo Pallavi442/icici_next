@@ -144,10 +144,11 @@ const Ratings = () => {
             />
           ))}
         </div>
-
-        <button className="mt-4 px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-xl hover:bg-orange-500 hover:text-white transition">
+        <div className='pt-8'>
+        <button className="mt-4 px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-xs hover:bg-orange-500 hover:text-white transition">
           Read all reviews
         </button>
+        </div>
       </div>
     </div>
   );

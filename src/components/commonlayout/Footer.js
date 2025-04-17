@@ -30,11 +30,11 @@ function Footer() {
                 </a>
             </div>
 
-  <div className='bg-[#ECE9E9] xl:h-[345px]'>
-            <div className='flex flex-col lg:flex-row py-8 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
-                <div className='flex lg:w-1/3 w-full flex-col gap-4'>
+            <div className='bg-[#ECE9E9] xl:h-[348px]'>
+            <div className='flex flex-col lg:flex-row pb-8 pt-10 px-5 gap-4 max-w-[1440px] mx-auto overflow-hidden'>
+                <div className='flex lg:w-1/3 w-full flex-col gap-6'>
                     <Image src={footerLogo} alt="footer" />
-                    <span className='font-mulish text-sm font-semibold'>
+                    <span className='font-mulish text-sm'>
                         ICICI Lombard General Insurance Company Limited,
                     </span>
                     <span className='font-mulish text-xs'>
@@ -51,14 +51,14 @@ function Footer() {
                         <Image src={youtube} alt="youtube" />
                     </div>
                 </div>
-                <div className='flex lg:w-2/3 w-full flex-col gap-4'>
+                <div className='flex lg:w-2/3 w-full flex-col gap-6 pt-8'>
                     <span className='font-mulish text-xs'>
                         ICICI Lombard General Insurance Ltd. is one of the largest private sector general insurance company in India offering insurance coverage for motor, health, travel, home, student travel and more. Policies can be purchased and renewed online as well. Immediate issuance of policy copy online.
                     </span>
                     <span className='font-mulish text-xs'>
-                        ICICI trade logo displayed above belongs to ICICI Bank and is used by ICICI Lombard GIC Ltd. under license and Lombard logo belongs to ICICI Lombard GIC Ltd assigned by Northbridge Financial Corporation solely for the territory of India. Insurance is the subject matter of the solicitation. The advertisement contains only an indication of cover offered. For more details on risk factors, terms, conditions and exclusions, please read the sales brochure carefully before concluding a sale. CIN: L67200MH2000PLC129408
+                        ICICI trade logo displayed above belongs to ICICI Bank and is used by ICICI Lombard GIC Ltd. under license and Lombard logo belongs to ICICI Lombard GIC Ltd assigned by Northbridge Financial Corporation solely for the territory of India. Insurance is the subject matter of the solicitation. The advertisement contains only an indication of cover offered. For more details on risk factors, terms, conditions and exclusions, please read the sales brochure carefully before <br></br>concluding a sale. CIN: L67200MH2000PLC129408
                     </span>
-                    <div className="mt-4">
+                    <div>
                         <select className="lg:w-1/4 w-full border-b border-b-gray-500 px-3 py-2 text-sm text-gray-700">
                             <option>Group companies</option>
                             <option>ICICI</option>
