@@ -2,7 +2,7 @@ import React from 'react';
 
 function TypeInsurance() {
     return (
-        <div className="flex flex-col items-center  md:px-24 lg:px-48 py-14 px-5 sm:px-0 max-w-[1440px] mx-auto overflow-hidden xl:h-[820px]">
+        <div className="flex flex-col items-center py-10 md:px-24 lg:px-48 md:py-14 px-5 sm:px-0 max-w-[1440px] mx-auto overflow-hidden xl:h-[820px]">
             <h1 className="font-mulish text-3xl md:text-4xl text-center mb-8 font-semibold">
                 Comprehensive car insurance vs Third party car insurance
             </h1>

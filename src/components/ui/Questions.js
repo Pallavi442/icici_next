@@ -7,7 +7,7 @@ function Questions() {
     const [isActive, setIsActive] = useState('/General');
     return (
         <div className='bg-[#F8F6F6]  xl:h-[1439px]'>
-        <div className='flex flex-col py-8 md:py-18 px-5 md:px-10 lg:px-20 max-w-[1440px] mx-auto overflow-hidden gap-5'>
+        <div className='flex flex-col py-8 md:py-18 px-5 md:px-10 lg:px-20 max-w-[1440px] mx-auto overflow-hidden gap-2 md:gap-5'>
             <h1 className='font-mulish text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-4'>
                 Get answers to common questions about car insurance policy
             </h1>
@@ -28,7 +28,7 @@ function Questions() {
                 {/* <hr className="border-gray-300 mb-4" /> */}
 
                 {isActive === '/General' && (
-                    <div className='flex flex-col gap-6 space-y-3 text-left mt-8'>
+                    <div className='flex flex-col gap-3 md:gap-6 space-y-3 text-left md:mt-8'>
                         <div className='flex flex-col text-justify'>
                             <span className='font-mulish text-base font-semibold'>Why do I need to insure my car?</span>
                             <span className='font-mulish text-base'>In India, third-party car insurance is compulsory for all car owners. Moreover, own-damage car insurance covers you in case of accidents, theft and fire. In case of any untoward incident, you dont have to pay out of pocket for repairs or replacement if you have a valid insurance policy.</span>

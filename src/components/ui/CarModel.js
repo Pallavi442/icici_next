@@ -8,9 +8,9 @@ import carModel4 from "../../../public/images/carModel4.svg";
 
 function CarModel() {
   return (
-    <div className="bg-[#00305B] w-full  pt-1 pb-12 xl:h-[381px]">
+    <div className="bg-[#00305B] w-full  pt-1 pb-6 md:pb-12 xl:h-[381px]">
       <div className="px-2 max-w-[1440px] mx-auto overflow-hidden w-[93%]">
-        <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl text-center text-white py-8 font-semibold">
+        <h1 className="font-mulish text-2xl sm:text-3xl lg:text-4xl text-center text-white py-4 md:py-8 font-semibold">
           Car Insurance for Popular Models in India
         </h1>
 

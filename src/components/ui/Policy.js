@@ -13,7 +13,7 @@ function Policy() {
     <div className=' bg-[#00305B] xl:h-[883px]'>
 
     <div className='max-w-[1440px] mx-auto overflow-hidden px-6 py-0 md:py-8 lg:h[884px] h-auto'>
-      <div className='pb-5'>
+      <div className='md:pb-5'>
         <h1 className='font-mulish text-2xl md:text-4xl text-center text-white py-6 font-semibold'>
           How to choose the right car insurance policy online?
         </h1>

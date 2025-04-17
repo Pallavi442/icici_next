@@ -23,7 +23,7 @@ const Include = () => {
         <div className='bg-[#F8F6F6] xl:h-[607px]'>
 
         <div className='sm:p-6 max-w-[1440px] mx-auto overflow-hidden px-5'>
-            <div className='text-center  py-6 md:py-8 '>
+            <div className='text-center  py-6 pb-0 md:py-8 '>
                 <h1 className='text-2xl md:text-3xl xl:text-4xl '>What’s included and what’s not?</h1>
             </div>
 
