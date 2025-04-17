@@ -11,7 +11,7 @@ function Buy() {
     return (
         <div className='bg-[rgba(248,246,246,1)] xl:h-[630px]'>
         <div className="pb-8 max-w-[1440px] mx-auto overflow-hidden">
-            <div className='px-5 py-6 md:py-18'>
+            <div className='px-5 py-12 md:py-18'>
                 <h1 className='font-mulish font-semibold  md:text-4xl text-2xl  text-center'>Things to keep in mind while buying a car insurance policy</h1>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 sm:px-6">

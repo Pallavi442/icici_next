@@ -32,7 +32,7 @@ function Premium() {
             <table className="min-w-[500px] table-auto text-left border-separate border-spacing-0">
               <thead>
                 <tr className="bg-[#E1E0D1]">
-                  <th className="px-4 py-3 border-r border-gray-300 w-1/2 font-normal">Cubic capacity</th>
+                  <th className="px-4 py-3 border-r border-white w-1/2 font-normal">Cubic capacity</th>
                   <th className="px-4 py-3 w-1/2 font-normal">Premium with effect from 1st June 2022 (Rs.)</th>
                 </tr>
               </thead>

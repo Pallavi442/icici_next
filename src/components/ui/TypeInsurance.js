@@ -10,7 +10,7 @@ function TypeInsurance() {
                 <table className="w-full table-auto text-left border-separate border-spacing-0">
                     <thead>
                         <tr className="bg-[rgba(225,224,209,1)] text-black">
-                            <th className="px-4 py-3 border-r border-gray-300 md:w-1/2">
+                            <th className="px-4 py-3 border-r border-white md:w-1/2">
                                 Comprehensive Car Insurance
                             </th>
                             <th className="px-4 py-3 md:w-1/2">
